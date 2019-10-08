@@ -1,18 +1,18 @@
 # Data augmentation
 List of useful data augmentation resources. You will find here some not common techniques, libraries, links to github repos, papers and others.
 
-* [Introduction](https://github.com/AgaMiko/Bird-recognition-review/blob/master/README.md#Introduction)
-* [Papers](https://github.com/AgaMiko/Bird-recognition-review/blob/master/README.md#Papers)
-* [Repositories](https://github.com/AgaMiko/Bird-recognition-review/blob/master/README.md#Repositories)
-* [Libraries](https://github.com/AgaMiko/Bird-recognition-review/blob/master/README.md#Libraries)
+* [Introduction](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Introduction)
+* [Papers](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Papers)
+* [Repositories](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Repositories)
+* [Libraries](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Libraries)
 
 
 # Introduction
 
 
-* [Traditional transformations](https://github.com/AgaMiko/Bird-recognition-review/blob/master/README.md##Traditional-transformations) - linear and elastic transformations. Most commonly used.
-* [Advanced transformations](https://github.com/AgaMiko/Bird-recognition-review/blob/master/README.md##Advanced-transformations) - More advanced techniques used rarely, usually for specific purpose.
-* [Neural-based transformations](https://github.com/AgaMiko/Bird-recognition-review/blob/master/README.md##Neural-based-transformations)
+* [Traditional transformations](https://github.com/AgaMiko/data-augmentation/blob/master/README.md##Traditional-transformations) - linear and elastic transformations. Most commonly used.
+* [Advanced transformations](https://github.com/AgaMiko/data-augmentation/blob/master/README.md##Advanced-transformations) - More advanced techniques used rarely, usually for specific purpose.
+* [Neural-based transformations](https://github.com/AgaMiko/data-augmentation/blob/master/README.md##Neural-based-transformations)
 
 
 ## Traditional transformations
