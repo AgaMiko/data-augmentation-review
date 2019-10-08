@@ -2,7 +2,7 @@
 List of useful data augmentation resources. You will find here some not common techniques, libraries, links to github repos, papers and others.
 
 * [Introduction](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Introduction)
-* [Common techniques] (https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Common-techniques)
+* [Common techniques](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Common-techniques)
 * [Papers](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Papers)
 * [Repositories](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Repositories)
 * [Libraries](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Libraries)
@@ -19,6 +19,7 @@ Data augmentation can be simply described as any method that makes our dataset l
 * Sound
 * Text
 
+# Common techniques
 # Images
 ## Traditional transformations
 Traditional transformations are the most common data augmentation methods applied in deep learning. Traditional transformations are mainly defined as affine (linear) and geometric (elastic) transformations. Typical example of linear operations on an image are rotation, shear, reflection, scaling, whereas geometric can include brightness manipulation, contrast change, saturation or hue.
