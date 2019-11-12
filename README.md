@@ -35,8 +35,6 @@ Traditional transformations are the most common data augmentation methods applie
 
 # Repositories
 
-# Libraries
-
 ## Computer vision
 
 #### - [albumentations](https://github.com/albu/albumentations) is a python library with a set of useful, large and diverse data augmentation methods. It offers over 30 different types of augmentations, easy and ready to use. Moreover, as the authors prove, the library is faster than other libraries on most of the transformations. 
