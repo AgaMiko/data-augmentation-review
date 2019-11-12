@@ -117,3 +117,24 @@ Features:
 ![example textual augmentations](https://github.com/makcedward/nlpaug/raw/master/res/textual_example.png)
 ![Example audio augmentations](https://github.com/makcedward/nlpaug/raw/master/res/audio_example.png)
 
+
+#### - [EDA NLP](https://github.com/jasonwei20/eda_nlp) - **EDA** is an **e**asy **d**ata **a**ugmentation techniques for boosting performance on text classification tasks. These are a generalized set of data augmentation techniques that are easy to implement and have shown improvements on five NLP classification tasks, with substantial improvements on datasets of size `N < 500`. While other techniques require you to train a language model on an external dataset just to get a small boost, we found that simple text editing operations using EDA result in good performance gains. Given a sentence in the training set, we perform the following operations:
+
+- **Synonym Replacement (SR):** Randomly choose *n* words from the sentence that are not stop words. Replace each of these words with one of its synonyms chosen at random.
+- **Random Insertion (RI):** Find a random synonym of a random word in the sentence that is not a stop word. Insert that synonym into a random position in the sentence. Do this *n* times.
+- **Random Swap (RS):** Randomly choose two words in the sentence and swap their positions. Do this *n* times.
+- **Random Deletion (RD):** For each word in the sentence, randomly remove it with probability *p*.
+
+
+## Audio
+#### - [SpecAugment with Pytorch](https://github.com/zcaceres/spec_augment) - (https://ai.googleblog.com/2019/04/specaugment-new-data-augmentation.html) is a state of the art data augmentation approach for speech recognition. It supports augmentations such as time wrap, time mask, frequency mask or all above combined.
+
+![time warp aug](https://github.com/zcaceres/spec_augment/raw/master/img/timewarp.png)
+
+![time mask aug](https://github.com/zcaceres/spec_augment/raw/master/img/timemask.png)
+
+
+#### - [Audiomentations](https://github.com/iver56/audiomentations) - A Python library for audio data augmentation. Inspired by albumentations. Useful for machine learning. It allows to use effects such as: Compose, AddGaussianNoise, TimeStretch, PitchShift and Shift.
+
+#### - [MUDA](https://github.com/bmcfee/muda) - A library for Musical Data Augmentation. Muda package implements annotation-aware musical data augmentation, as described in the muda paper.
+The goal of this package is to make it easy for practitioners to consistently apply perturbations to annotated music data for the purpose of fitting statistical models.
