@@ -36,6 +36,9 @@ Traditional transformations are the most common data augmentation methods applie
 # Repositories
 
 # Libraries
+
+## Computer vision
+
 #### - [albumentations](https://github.com/albu/albumentations) is a python library with a set of useful, large and diverse data augmentation methods. It offers over 30 different types of augmentations, easy and ready to use. Moreover, as the authors prove, the library is faster than other libraries on most of the transformations. 
 
 Example jupyter notebooks:
@@ -84,7 +87,26 @@ The details are avaible here: ![UNSUPERVISED DATA AUGMENTATION FOR CONSISTENCY T
 * Pad()
 * RandomFlip()
 
-#### [nlpaug](https://github.com/makcedward/nlpaug) - This python library helps you with augmenting nlp for your machine learning projects. Visit this introduction to understand about [Data Augmentation in NLP](https://towardsdatascience.com/data-augmentation-in-nlp-2801a34dfc28). `Augmenter` is the basic element of augmentation while `Flow` is a pipeline to orchestra multi augmenter together.
+
+#### - [Random erasing](https://github.com/zhunzhong07/Random-Erasing) - The code is based on the paper: https://arxiv.org/abs/1708.04896. The Absract:
+
+In this paper, we introduce Random Erasing, a new data augmentation method for training the convolutional neural network (CNN). In training, Random Erasing randomly selects a rectangle region in an image and erases its pixels with random values. In this process, training images with various levels of occlusion are generated, which reduces the risk of over-fitting and makes the model robust to occlusion. Random Erasing is parameter learning free, easy to implement, and can be integrated with most of the CNN-based recognition models. Albeit simple, Random Erasing is complementary to commonly used data augmentation techniques such as random cropping and flipping, and yields consistent improvement over strong baselines in image classification, object detection and person re-identification. Code is available at: this https URL.
+
+![Example of random erasing](https://github.com/zhunzhong07/Random-Erasing/raw/master/all_examples-page-001.jpg)
+
+#### - [data augmentation in C++](https://github.com/takmin/DataAugmentation) - Simple image augmnetation program transform input images with rotation, slide, blur, and noise to create training data of image recognition.
+
+#### - [Data augmentation with GANs](https://github.com/AntreasAntoniou/DAGAN) - This repository contain files with Generative Adversarial Network, which can be used to successfully augment the dataset. This is an implementation of DAGAN as described in https://arxiv.org/abs/1711.04340. The implementation provides data loaders, model builders, model trainers, and synthetic data generators for the Omniglot and VGG-Face datasets.
+
+
+## Natural Language Processing
+
+#### - [Contextual data augmentation](https://github.com/pfnet-research/contextual_augmentation) - Contextual augmentation is a domain-independent data augmentation for text classification tasks. Texts in supervised dataset are augmented by replacing words with other words which are predicted by a label-conditioned bi-directional language model. 
+This repository contains a collection of scripts for an experiment of [Contextual Augmentation](https://arxiv.org/pdf/1805.06201.pdf).
+
+![example contextual data augmentation](https://i.imgur.com/JOyKkVt.png) 
+
+#### - [nlpaug](https://github.com/makcedward/nlpaug) - This python library helps you with augmenting nlp for your machine learning projects. Visit this introduction to understand about [Data Augmentation in NLP](https://towardsdatascience.com/data-augmentation-in-nlp-2801a34dfc28). `Augmenter` is the basic element of augmentation while `Flow` is a pipeline to orchestra multi augmenter together.
 
 Features:
  *   Generate synthetic data for improving model performance without manual effort
@@ -94,11 +116,4 @@ Features:
 
 ![example textual augmentations](https://github.com/makcedward/nlpaug/raw/master/res/textual_example.png)
 ![Example audio augmentations](https://github.com/makcedward/nlpaug/raw/master/res/audio_example.png)
-
-#### [data augmentation in C++](https://github.com/takmin/DataAugmentation) - Simple image augmnetation program transform input images with rotation, slide, blur, and noise to create training data of image recognition.
-
-#### [Data augmentation with GANs](https://github.com/AntreasAntoniou/DAGAN) - This repository contain files with Generative Adversarial Network, which can be used to successfully augment the dataset. This is an implementation of DAGAN as described in https://arxiv.org/abs/1711.04340. The implementation provides data loaders, model builders, model trainers, and synthetic data generators for the Omniglot and VGG-Face datasets.
-
-#### [Contextual Augmentation](https://github.com/pfnet-research/contextual_augmentation) - This repository contains a collection of scripts for an experiment of [Contextual Augmentation](https://arxiv.org/pdf/1805.06201.pdf). Contextual augmentation is a domain-independent data augmentation for text classification tasks.
-Texts in supervised dataset are augmented by replacing words with other words which are predicted by a label-conditioned bi-directional language model.
 
