@@ -1,11 +1,17 @@
 # Data augmentation
-List of useful data augmentation resources. You will find here some not common techniques, libraries, links to github repos, papers and others.
+List of useful data augmentation resources. You will find here some links to more or less popular github repos :sparkles:, libraries, papers :books: and other information.
+
+Do you like it? Feel free to :star: !
+Feel free to pull request!
 
 * [Introduction](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Introduction)
 * [Common techniques](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Common-techniques)
 * [Papers](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Papers)
 * [Repositories](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Repositories)
-* [Libraries](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Libraries)
+
+
+![Enriching data illustration](https://image.slidesharecdn.com/data-thekeytodeeplearning-aitoday-braincreators-25thjuly2017-170726144816/95/data-the-key-to-deep-learning-39-638.jpg)
+[Source](https://www.slideshare.net/braincreators/data-the-key-to-deep-learning)
 
 
 # Introduction
@@ -25,13 +31,19 @@ Data augmentation can be simply described as any method that makes our dataset l
 Traditional transformations are the most common data augmentation methods applied in deep learning. Traditional transformations are mainly defined as affine (linear) and geometric (elastic) transformations. Typical example of linear operations on an image are rotation, shear, reflection, scaling, whereas geometric can include brightness manipulation, contrast change, saturation or hue.
 
 ## Advanced transformations
-
+More advanced transformations include [adversarial training](http://openaccess.thecvf.com/content_cvpr_2018/html/Peng_Jointly_Optimize_Data_CVPR_2018_paper.html), [Random erasing](https://github.com/zhunzhong07/Random-Erasing),  [Weather transforms](https://github.com/albu/albumentations/blob/master/notebooks/example_weather_transforms.ipynb).
 
 ## Neural-based transformations
+Relatively new branch of data augmentation methods. It uses neural networks to generate new data. The most popula are [Generative Adversarial Networks](https://ieeexplore.ieee.org/abstract/document/8363576) and [Neural Style Transfer](https://ieeexplore.ieee.org/document/8864616).
 
-# Sound
+# Audio
+Typical audio augmentations are mixing few sounds, add gaussian noise, speed up or slow down, shift pitch and shift. Less popular than image augmentation, probably because audio classification problems are often resolved with mel-spectrograms and convolutional neural networks.
+ 
+# Text (NLP)
+Not as popular and common as image augmentations due to advanced level of those augmentations: [Contextual data augmentation](https://github.com/pfnet-research/contextual_augmentation)
 
 # Papers
+In progress
 
 # Repositories
 
