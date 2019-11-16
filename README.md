@@ -4,10 +4,11 @@ List of useful data augmentation resources. You will find here some links to mor
 Do you like it? Feel free to :star: !
 Feel free to pull request!
 
-* [Introduction](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Introduction)
-* [Common techniques](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Common-techniques)
-* [Papers](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Papers)
-* [Repositories](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Repositories)
+* [Introduction](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Introduction)
+* [Papers](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Papers)
+* [Repositories](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Repositories)
+* [Books](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Books)
+* [Other](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Other)
 
 
 ![Enriching data illustration](https://image.slidesharecdn.com/data-thekeytodeeplearning-aitoday-braincreators-25thjuly2017-170726144816/95/data-the-key-to-deep-learning-39-638.jpg)
@@ -210,3 +211,9 @@ Features:
 
 #### - [MUDA](https://github.com/bmcfee/muda) - A library for Musical Data Augmentation. Muda package implements annotation-aware musical data augmentation, as described in the muda paper.
 The goal of this package is to make it easy for practitioners to consistently apply perturbations to annotated music data for the purpose of fitting statistical models.
+
+# Books
+in progress
+
+# Other
+in progress
