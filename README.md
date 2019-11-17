@@ -11,9 +11,6 @@ Feel free to pull request!
 * [Other](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Other)
 
 
-![Enriching data illustration](https://image.slidesharecdn.com/data-thekeytodeeplearning-aitoday-braincreators-25thjuly2017-170726144816/95/data-the-key-to-deep-learning-39-638.jpg)
-[Source](https://www.slideshare.net/braincreators/data-the-key-to-deep-learning)
-
 
 # Introduction
 ## What is data augmentation?
