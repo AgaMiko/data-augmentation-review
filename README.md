@@ -16,29 +16,6 @@ Feel free to pull request!
 ## What is data augmentation?
 Data augmentation can be simply described as any method that makes our dataset larger. To create more images for example, we could zoom the in and save a result, we could change the brightness of the image or rotate it. To get bigger sound dataset we could try raise or lower the pitch of the audio sample or slow down/speed up.
 
-* Image
-  * [Traditional transformations](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Traditional-transformations) - linear and elastic transformations. Most commonly used.
-  * [Advanced transformations](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Advanced-transformations) - More advanced techniques used rarely, usually for specific purpose.
-  * [Neural-based transformations](https://github.com/AgaMiko/data-augmentation/blob/master/README.md#Neural-based-transformations)
-* Sound
-* Text
-
-# Common techniques
-# Images
-## Traditional transformations
-Traditional transformations are the most common data augmentation methods applied in deep learning. Traditional transformations are mainly defined as affine (linear) and geometric (elastic) transformations. Typical example of linear operations on an image are rotation, shear, reflection, scaling, whereas geometric can include brightness manipulation, contrast change, saturation or hue.
-
-## Advanced transformations
-More advanced transformations include [adversarial training](http://openaccess.thecvf.com/content_cvpr_2018/html/Peng_Jointly_Optimize_Data_CVPR_2018_paper.html), [Random erasing](https://github.com/zhunzhong07/Random-Erasing),  [Weather transforms](https://github.com/albu/albumentations/blob/master/notebooks/example_weather_transforms.ipynb).
-
-## Neural-based transformations
-Relatively new branch of data augmentation methods. It uses neural networks to generate new data. The most popula are [Generative Adversarial Networks](https://ieeexplore.ieee.org/abstract/document/8363576) and [Neural Style Transfer](https://ieeexplore.ieee.org/document/8864616).
-
-# Audio
-Typical audio augmentations are mixing few sounds, add gaussian noise, speed up or slow down, shift pitch and shift. Less popular than image augmentation, probably because audio classification problems are often resolved with mel-spectrograms and convolutional neural networks.
- 
-# Text (NLP)
-Not as popular and common as image augmentations due to advanced level of those augmentations: [Contextual data augmentation](https://github.com/pfnet-research/contextual_augmentation)
 
 # Repositories
 
