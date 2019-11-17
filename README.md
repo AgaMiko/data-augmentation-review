@@ -13,7 +13,6 @@ Feel free to pull request!
 
 
 # Introduction
-## What is data augmentation?
 Data augmentation can be simply described as any method that makes our dataset larger. To create more images for example, we could zoom the in and save a result, we could change the brightness of the image or rotate it. To get bigger sound dataset we could try raise or lower the pitch of the audio sample or slow down/speed up.
 
 
