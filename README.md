@@ -73,15 +73,15 @@ The details are avaible here: [UNSUPERVISED DATA AUGMENTATION FOR CONSISTENCY TR
 * RandomFlip()
 
 
-#### - [Random erasing](https://github.com/zhunzhong07/Random-Erasing) - The code is based on the paper: https://arxiv.org/abs/1708.04896. The Absract:
+#### - [Random erasing](https://github.com/zhunzhong07/Random-Erasing) ![](https://img.shields.io/github/stars/zhunzhong07/Random-Erasing.svg?style=social) - The code is based on the paper: https://arxiv.org/abs/1708.04896. The Absract:
 
 In this paper, we introduce Random Erasing, a new data augmentation method for training the convolutional neural network (CNN). In training, Random Erasing randomly selects a rectangle region in an image and erases its pixels with random values. In this process, training images with various levels of occlusion are generated, which reduces the risk of over-fitting and makes the model robust to occlusion. Random Erasing is parameter learning free, easy to implement, and can be integrated with most of the CNN-based recognition models. Albeit simple, Random Erasing is complementary to commonly used data augmentation techniques such as random cropping and flipping, and yields consistent improvement over strong baselines in image classification, object detection and person re-identification. Code is available at: this https URL.
 
 ![Example of random erasing](https://github.com/zhunzhong07/Random-Erasing/raw/master/all_examples-page-001.jpg)
 
-#### - [data augmentation in C++](https://github.com/takmin/DataAugmentation) - Simple image augmnetation program transform input images with rotation, slide, blur, and noise to create training data of image recognition.
+#### - [data augmentation in C++](https://github.com/takmin/DataAugmentation) - ![](https://img.shields.io/github/stars/takmin/DataAugmentation.svg?style=social) Simple image augmnetation program transform input images with rotation, slide, blur, and noise to create training data of image recognition.
 
-#### - [Data augmentation with GANs](https://github.com/AntreasAntoniou/DAGAN) - This repository contain files with Generative Adversarial Network, which can be used to successfully augment the dataset. This is an implementation of DAGAN as described in https://arxiv.org/abs/1711.04340. The implementation provides data loaders, model builders, model trainers, and synthetic data generators for the Omniglot and VGG-Face datasets.
+#### - [Data augmentation with GANs](https://github.com/AntreasAntoniou/DAGAN) ![](https://img.shields.io/github/stars/AntreasAntoniou/DAGAN.svg?style=social) - This repository contain files with Generative Adversarial Network, which can be used to successfully augment the dataset. This is an implementation of DAGAN as described in https://arxiv.org/abs/1711.04340. The implementation provides data loaders, model builders, model trainers, and synthetic data generators for the Omniglot and VGG-Face datasets.
 
 
 ## Natural Language Processing
@@ -91,7 +91,7 @@ This repository contains a collection of scripts for an experiment of [Contextua
 
 ![example contextual data augmentation](https://i.imgur.com/JOyKkVt.png) 
 
-#### - [nlpaug](https://github.com/makcedward/nlpaug) - This python library helps you with augmenting nlp for your machine learning projects. Visit this introduction to understand about [Data Augmentation in NLP](https://towardsdatascience.com/data-augmentation-in-nlp-2801a34dfc28). `Augmenter` is the basic element of augmentation while `Flow` is a pipeline to orchestra multi augmenter together.
+#### - [nlpaug](https://github.com/makcedward/nlpaug)  ![](https://img.shields.io/github/stars/makcedward/nlpaug.svg?style=social) - This python library helps you with augmenting nlp for your machine learning projects. Visit this introduction to understand about [Data Augmentation in NLP](https://towardsdatascience.com/data-augmentation-in-nlp-2801a34dfc28). `Augmenter` is the basic element of augmentation while `Flow` is a pipeline to orchestra multi augmenter together.
 
 Features:
  *   Generate synthetic data for improving model performance without manual effort
@@ -103,7 +103,7 @@ Features:
 ![Example audio augmentations](https://github.com/makcedward/nlpaug/raw/master/res/audio_example.png)
 
 
-#### - [EDA NLP](https://github.com/jasonwei20/eda_nlp) - **EDA** is an **e**asy **d**ata **a**ugmentation techniques for boosting performance on text classification tasks. These are a generalized set of data augmentation techniques that are easy to implement and have shown improvements on five NLP classification tasks, with substantial improvements on datasets of size `N < 500`. While other techniques require you to train a language model on an external dataset just to get a small boost, we found that simple text editing operations using EDA result in good performance gains. Given a sentence in the training set, we perform the following operations:
+#### - [EDA NLP](https://github.com/jasonwei20/eda_nlp)  ![](https://img.shields.io/github/stars/jasonwei20/eda_nlp.svg?style=social) - **EDA** is an **e**asy **d**ata **a**ugmentation techniques for boosting performance on text classification tasks. These are a generalized set of data augmentation techniques that are easy to implement and have shown improvements on five NLP classification tasks, with substantial improvements on datasets of size `N < 500`. While other techniques require you to train a language model on an external dataset just to get a small boost, we found that simple text editing operations using EDA result in good performance gains. Given a sentence in the training set, we perform the following operations:
 
 - **Synonym Replacement (SR):** Randomly choose *n* words from the sentence that are not stop words. Replace each of these words with one of its synonyms chosen at random.
 - **Random Insertion (RI):** Find a random synonym of a random word in the sentence that is not a stop word. Insert that synonym into a random position in the sentence. Do this *n* times.
@@ -112,16 +112,16 @@ Features:
 
 
 ## Audio
-#### - [SpecAugment with Pytorch](https://github.com/zcaceres/spec_augment) - (https://ai.googleblog.com/2019/04/specaugment-new-data-augmentation.html) is a state of the art data augmentation approach for speech recognition. It supports augmentations such as time wrap, time mask, frequency mask or all above combined.
+#### - [SpecAugment with Pytorch](https://github.com/zcaceres/spec_augment) ![](https://img.shields.io/github/stars/zcaceres/spec_augment.svg?style=social) - (https://ai.googleblog.com/2019/04/specaugment-new-data-augmentation.html) is a state of the art data augmentation approach for speech recognition. It supports augmentations such as time wrap, time mask, frequency mask or all above combined.
 
 ![time warp aug](https://github.com/zcaceres/spec_augment/raw/master/img/timewarp.png)
 
 ![time mask aug](https://github.com/zcaceres/spec_augment/raw/master/img/timemask.png)
 
 
-#### - [Audiomentations](https://github.com/iver56/audiomentations) - A Python library for audio data augmentation. Inspired by albumentations. Useful for machine learning. It allows to use effects such as: Compose, AddGaussianNoise, TimeStretch, PitchShift and Shift.
+#### - [Audiomentations](https://github.com/iver56/audiomentations) ![](https://img.shields.io/github/stars/iver56/audiomentations.svg?style=social) - A Python library for audio data augmentation. Inspired by albumentations. Useful for machine learning. It allows to use effects such as: Compose, AddGaussianNoise, TimeStretch, PitchShift and Shift.
 
-#### - [MUDA](https://github.com/bmcfee/muda) - A library for Musical Data Augmentation. Muda package implements annotation-aware musical data augmentation, as described in the muda paper.
+#### - [MUDA](https://github.com/bmcfee/muda) ![](https://img.shields.io/github/stars/bmcfee/muda.svg?style=social) - A library for Musical Data Augmentation. Muda package implements annotation-aware musical data augmentation, as described in the muda paper.
 The goal of this package is to make it easy for practitioners to consistently apply perturbations to annotated music data for the purpose of fitting statistical models.
 
 
