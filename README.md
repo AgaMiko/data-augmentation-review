@@ -18,6 +18,43 @@ Example data augmentation techniques are presented on the diagram below.
 
 ![data augmentation diagram](images/da_diagram.png)
 
+## DATA AUGMENTATION
+* ### Images
+	* Affine transformations
+		* Rotation
+		* Scaling
+		* Random cropping
+		* Reflection
+	* Elastic transformations
+		* Contrast shift
+		* Brightness shift
+		* Blurring
+		* Channel shuffle
+	* Advanced transformations
+		* Random erasing
+		* Adding rain effects, sun flare...
+		* Image blending
+	* Neural-based transformations
+		* Adversarial noise
+		* Neural Style Transfer
+		* Generative Adversarial Networks
+* ### Audio
+	* Noise injection
+	* Time shift
+	* Time stretching
+	* Random cropping
+	* Pitch scaling
+	* Dynamic range compression
+	* Simple gain
+	* Equalization
+* ### Natural Language Processing
+	* Thesaurus
+	* Text Generation
+	* Back Translation
+	* Word Embeddings
+	* Contextualized Word Embeddings
+* ### AutoAugment
+
 If you wish to cite us, you can cite followings paper of your choice:  [Style transfer-based image synthesis as an efficient regularization technique in deep learning](https://ieeexplore.ieee.org/document/8864616) or [Data augmentation for improving deep learning in image classification problem](https://ieeexplore.ieee.org/document/8388338).
 
 # Repositories
