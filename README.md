@@ -133,8 +133,10 @@ In this paper, we introduce Random Erasing, a new data augmentation method for t
 
 #### - [Data augmentation with GANs](https://github.com/AntreasAntoniou/DAGAN) ![](https://img.shields.io/github/stars/AntreasAntoniou/DAGAN.svg?style=social) - This repository contain files with Generative Adversarial Network, which can be used to successfully augment the dataset. This is an implementation of DAGAN as described in https://arxiv.org/abs/1711.04340. The implementation provides data loaders, model builders, model trainers, and synthetic data generators for the Omniglot and VGG-Face datasets.
 
-
-
+#### - [Joint Discriminative and Generative Learning](https://github.com/NVlabs/DG-Net) ![](https://img.shields.io/github/stars/NVlabs/DG-Net.svg?style=social) - This repo is for Joint Discriminative and Generative Learning for Person Re-identification (CVPR2019 Oral). The author proposes an end-to-end training network that simultaneously generates more training samples and conducts representation learning. Given N real samples, the network could generate O(NxN) high-fidelity samples.
+![Example of DGNet](https://github.com/NVlabs/DG-Net/blob/master/NxN.jpg)
+[[Project]](http://zdzheng.xyz/DG-Net/) [[Paper]](https://arxiv.org/abs/1904.07223) [[YouTube]](https://www.youtube.com/watch?v=ubCrEAIpQs4) [[Bilibili]](https://www.bilibili.com/video/av51439240) [[Poster]](http://zdzheng.xyz/images/DGNet_poster.pdf)
+[[Supp]](http://jankautz.com/publications/JointReID_CVPR19_supp.pdf)
 
 ## Natural Language Processing
 
