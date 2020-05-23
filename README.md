@@ -54,6 +54,15 @@ Example data augmentation techniques are presented on the diagram below.
 	* Word Embeddings
 	* Contextualized Word Embeddings
 	* Voice conversion
+* ### Time Series Data Augmentation
+	* Basic approaches
+		* Warping
+		* Jittering
+		* Perturbing
+	* Advanced approches
+		* Embedding space
+		* GAN/Adversarial
+		* RL/Meta-Learning
 * ### AutoAugment
 
 If you wish to cite us, you can cite followings paper of your choice:  [Style transfer-based image synthesis as an efficient regularization technique in deep learning](https://ieeexplore.ieee.org/document/8864616) or [Data augmentation for improving deep learning in image classification problem](https://ieeexplore.ieee.org/document/8388338).
@@ -183,9 +192,28 @@ Features:
 #### - [MUDA](https://github.com/bmcfee/muda) ![](https://img.shields.io/github/stars/bmcfee/muda.svg?style=social) - A library for Musical Data Augmentation. Muda package implements annotation-aware musical data augmentation, as described in the muda paper.
 The goal of this package is to make it easy for practitioners to consistently apply perturbations to annotated music data for the purpose of fitting statistical models.
 
+#### - [tsaug](https://github.com/arundo/tsaug) ![](https://img.shields.io/github/stars/tsaug/spec_augment.svg?style=social) - 
+ is a Python package for time series augmentation. It offers a set of augmentation methods for time series, as well as a simple API to connect multiple augmenters into a pipeline. Can be used for audio augmentation.
+ 
+ 
+## Time series
+#### - [tsaug](https://github.com/arundo/tsaug) ![](https://img.shields.io/github/stars/tsaug/spec_augment.svg?style=social) - 
+ is a Python package for time series augmentation. It offers a set of augmentation methods for time series, as well as a simple API to connect multiple augmenters into a pipeline. 
+ 
+ Example augmenters:
+ * random time warping 5 times in parallel,
+ * random crop subsequences with length 300, 
+ * random quantize to 10-, 20-, or 30- level sets, 
+ * with 80% probability , random drift the signal up to 10% - 50%,
+ * with 50% probability, reverse the sequence.
+ 
+![](https://tsaug.readthedocs.io/en/stable/_images/notebook_Examples_of_augmenters_3_0.png)
 
 # Papers
 ## 2020
+* [Time Series Data Augmentation for Deep Learning: A Survey](https://arxiv.org/abs/2002.12478);Qingsong Wen, Liang Sun, Xiaomin Song, Jingkun Gao, Xue Wang, Huan Xu; Deep learning performs remarkably well on many time series analysis tasks recently. The superior performance of deep neural networks relies heavily on a large number of training data to avoid overfitting. However, the labeled data of many real-world time series applications may be limited such as classification in medical time series and anomaly detection in AIOps. As an effective way to enhance the size and quality of the training data, data augmentation is crucial to the successful application of deep learning models on time series data. In this paper, we systematically review different data augmentation methods for time series. We propose a taxonomy for the reviewed methods, and then provide a structured review for these methods by highlighting their strengths and limitations. We also empirically compare different data augmentation methods for different tasks including time series anomaly detection, classification and forecasting. Finally, we discuss and highlight future research directions, including data augmentation in time-frequency domain, augmentation combination, and data augmentation and weighting for imbalanced class.
+
+
 * [Attribute Mix: Semantic Data Augmentation for Fine Grained Recognition](https://arxiv.org/abs/2004.02684);Hao Li, Xiaopeng Zhang, Hongkai Xiong, Qi Tian ; Collecting fine-grained labels usually requires expert-level domain knowledge and is prohibitive to scale up. In this paper, we propose Attribute Mix, a data augmentation strategy at attribute level to expand the fine-grained samples. The principle lies in that attribute features are shared among fine-grained sub-categories, and can be seamlessly transferred among images. Toward this goal, we propose an automatic attribute mining approach to discover attributes that belong to the same super-category, and Attribute Mix is operated by mixing semantically meaningful attribute features from two images. Attribute Mix is a simple but effective data augmentation strategy that can significantly improve the recognition performance without increasing the inference budgets. Furthermore, since attributes can be shared among images from the same super-category, we further enrich the training samples with attribute level labels using images from the generic domain. Experiments on widely used fine-grained benchmarks demonstrate the effectiveness of our proposed method. Specifically, without any bells and whistles, we achieve accuracies of 90.2%, 93.1% and 94.9% on CUB-200-2011, FGVC-Aircraft and Standford Cars, respectively.
 
 * [Dictionary-based Data Augmentation for Cross-Domain Neural Machine Translation](https://arxiv.org/abs/2004.02577); Wei Peng, Chongxuan Huang, Tianhao Li, Yun Chen, Qun Liu ;
@@ -232,8 +260,7 @@ Recently, the use of synthetic data generated by GANs has become a popular metho
  
  * [Small energy masking for improved neural network training for end-to-end speech recognition](https://arxiv.org/abs/2002.06312);Chanwoo Kim, Kwangyoun Kim, Sathish Reddy Indurthi ; In this paper, we present a Small Energy Masking (SEM) algorithm, which masks inputs having values below a certain threshold. More specifically, a time-frequency bin is masked if the filterbank energy in this bin is less than a certain energy threshold. A uniform distribution is employed to randomly generate the ratio of this energy threshold to the peak filterbank energy of each utterance in decibels. The unmasked feature elements are scaled so that the total sum of the feature values remain the same through this masking procedure. This very simple algorithm shows relatively 11.2 % and 13.5 % Word Error Rate (WER) improvements on the standard LibriSpeech test-clean and test-other sets over the baseline end-to-end speech recognition system. Additionally, compared to the input dropout algorithm, SEM algorithm shows relatively 7.7 % and 11.6 % improvements on the same LibriSpeech test-clean and test-other sets. With a modified shallow-fusion technique with a Transformer LM, we obtained a 2.62 % WER on the LibriSpeech test-clean set and a 7.87 % WER on the LibriSpeech test-other set.
  
-
-## 2019
+ ## 2019
 * [Occlusions for Effective Data Augmentation in Image Classification](https://arxiv.org/abs/1910.10651); Ruth Fong, Andrea Vedaldi; Deep networks for visual recognition are known to leverage "easy to recognise" portions of objects such as faces and distinctive texture patterns. The lack of a holistic understanding of objects may increase fragility and overfitting. In recent years, several papers have proposed to address this issue by means of occlusions as a form of data augmentation. However, successes have been limited to tasks such as weak localization and model interpretation, but no benefit was demonstrated on image classification on large-scale datasets. In this paper, we show that, by using a simple technique based on batch augmentation, occlusions as data augmentation can result in better performance on ImageNet for high-capacity models (e.g., ResNet50). We also show that varying amounts of occlusions used during training can be used to study the robustness of different neural network architectures.
 
 * [CutMix: Regularization Strategy to Train Strong Classifiers with Localizable Features](https://arxiv.org/abs/1905.04899); Sangdoo Yun, Dongyoon Han, Seong Joon Oh, Sanghyuk Chun, Junsuk Choe, Youngjoon Yoo; Regional dropout strategies have been proposed to enhance the performance of convolutional neural network classifiers. They have proved to be effective for guiding the model to attend on less discriminative parts of objects (e.g. leg as opposed to head of a person), thereby letting the network generalize better and have better object localization capabilities. On the other hand, current methods for regional dropout remove informative pixels on training images by overlaying a patch of either black pixels or random noise. Such removal is not desirable because it leads to information loss and inefficiency during training. We therefore propose the CutMix augmentation strategy: patches are cut and pasted among training images where the ground truth labels are also mixed proportionally to the area of the patches. By making efficient use of training pixels and retaining the regularization effect of regional dropout, CutMix consistently outperforms the state-of-the-art augmentation strategies on CIFAR and ImageNet classification tasks, as well as on the ImageNet weakly-supervised localization task. Moreover, unlike previous augmentation methods, our CutMix-trained ImageNet classifier, when used as a pretrained model, results in consistent performance gains in Pascal detection and MS-COCO image captioning benchmarks. We also show that CutMix improves the model robustness against input corruptions and its out-of-distribution detection performances.
