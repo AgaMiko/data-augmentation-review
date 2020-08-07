@@ -151,6 +151,11 @@ In this paper, we introduce Random Erasing, a new data augmentation method for t
 
 ![](https://user-images.githubusercontent.com/37669469/76104483-6eb5c100-5fa1-11ea-832b-b7a9a8e23895.jpg)
 
+#### - [DocCreator](https://github.com/DocCreator/DocCreator) ![](https://img.shields.io/github/stars/DocCreator/DocCreator.svg?style=social) - is an open source, cross-platform software allowing to generate synthetic document images and the accompanying groundtruth. Various degradation models can be applied on original document images to create virtually unlimited amounts of different images.
+A multi-platform and open-source software able to create synthetic image documents with ground truth.
+
+![](http://doc-creator.labri.fr/images/back.gif)
+
 
 ## Natural Language Processing
 
