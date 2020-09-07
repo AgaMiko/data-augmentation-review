@@ -200,7 +200,19 @@ The goal of this package is to make it easy for practitioners to consistently ap
 #### - [tsaug](https://github.com/arundo/tsaug) ![](https://img.shields.io/github/stars/tsaug/spec_augment.svg?style=social) - 
  is a Python package for time series augmentation. It offers a set of augmentation methods for time series, as well as a simple API to connect multiple augmenters into a pipeline. Can be used for audio augmentation.
  
- 
+#### - [wav-augment](https://github.com/facebookresearch/WavAugment) ![](https://img.shields.io/github/stars/facebookresearch/WavAugment.svg?style=social) - performs data augmentation on audio data. 
+The audio data is represented as [pytorch](https://pytorch.org/) tensors. 
+It is particularly useful for speech data. 
+Among others, it implements the augmentations that we found to be most useful for self-supervised learning 
+(_Data Augmenting Contrastive Learning of Speech Representations in the Time Domain_, E. Kharitonov, M. Rivière, G. Synnaeve, L. Wolf, P.-E. Mazaré, M. Douze, E. Dupoux. [[arxiv]](https://arxiv.org/abs/2007.00991)):
+
+* Pitch randomization,
+* Reverberation,
+* Additive noise,
+* Time dropout (temporal masking),
+* Band reject,
+* Clipping
+
 ## Time series
 #### - [tsaug](https://github.com/arundo/tsaug) ![](https://img.shields.io/github/stars/tsaug/spec_augment.svg?style=social) - 
  is a Python package for time series augmentation. It offers a set of augmentation methods for time series, as well as a simple API to connect multiple augmenters into a pipeline. 
