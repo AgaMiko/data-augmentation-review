@@ -156,6 +156,18 @@ A multi-platform and open-source software able to create synthetic image documen
 
 ![](http://doc-creator.labri.fr/images/back.gif)
 
+#### - [OnlineAugment](https://github.com/zhiqiangdon/online-augment) ![](https://img.shields.io/github/stars/zhiqiangdon/online-augment.svg?style=social) - implementation in PyTorch
+- More automatic than AutoAugment and related 
+  - Towards fully automatic (STN and VAE, No need to specify the image primitives). 
+  - Broad domains (natural, medical images, etc). 
+  - Diverse tasks (classification, segmentation, etc). 
+- Easy to use 
+  - One-stage training (user-friendly). 
+  - Simple code (single GPU training, no need for parallel optimization). 
+- Orthogonal to AutoAugment and related 
+  - Online v.s. Offline (Joint optimization, no expensive offline policy searching). 
+  - State-of-the-art performance (in combination with AutoAugment). 
+![](https://github.com/zhiqiangdon/online-augment/raw/master/vis/STN.gif)
 
 ## Natural Language Processing
 
@@ -228,6 +240,8 @@ Among others, it implements the augmentations that we found to be most useful fo
 
 # Papers
 ## 2020
+* [OnlineAugment: Online Data Augmentation with Less Domain Knowledge](https://arxiv.org/pdf/2007.09271.pdf);Zhiqiang Tang, Yunhe Gao, Leonid Karlinsky, Prasanna Sattigeri, Rogerio Feris, Dimitris Metaxas; Data augmentation is one of the most important tools in training modern deep neural networks. Recently, great advances have been made in searching for optimal augmentation policies in the image classification domain. However, two key points related to data augmentation remain uncovered by the current methods. First is that most if not all modern augmentation search methods are offline and learning policies are isolated from their usage. The learned policies are mostly constant throughout the training process and are not adapted to the current training model state. Second, the policies rely on class-preserving image processing functions. Hence applying current offline methods to new tasks may require domain knowledge to specify such kind of operations. In this work, we offer an orthogonal online data augmentation scheme together with three new augmentation networks, co-trained with the target learning task. It is both more efficient, in the sense that it does not require expensive offline training when entering a new domain, and more adaptive as it adapts to the learner state. Our augmentation networks require less domain knowledge and are easily applicable to new tasks. Extensive experiments demonstrate that the proposed scheme alone performs on par with the state-of-the-art offline data augmentation methods, as well as improving upon the state-of-the-art in combination with those methods. Code is available at this [https URL](https://github.com/zhiqiangdon/online-augment) .
+
 * [Time Series Data Augmentation for Deep Learning: A Survey](https://arxiv.org/abs/2002.12478);Qingsong Wen, Liang Sun, Xiaomin Song, Jingkun Gao, Xue Wang, Huan Xu; Deep learning performs remarkably well on many time series analysis tasks recently. The superior performance of deep neural networks relies heavily on a large number of training data to avoid overfitting. However, the labeled data of many real-world time series applications may be limited such as classification in medical time series and anomaly detection in AIOps. As an effective way to enhance the size and quality of the training data, data augmentation is crucial to the successful application of deep learning models on time series data. In this paper, we systematically review different data augmentation methods for time series. We propose a taxonomy for the reviewed methods, and then provide a structured review for these methods by highlighting their strengths and limitations. We also empirically compare different data augmentation methods for different tasks including time series anomaly detection, classification and forecasting. Finally, we discuss and highlight future research directions, including data augmentation in time-frequency domain, augmentation combination, and data augmentation and weighting for imbalanced class.
 
 
