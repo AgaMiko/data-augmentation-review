@@ -172,7 +172,7 @@ A multi-platform and open-source software able to create synthetic image documen
 
 ## Natural Language Processing
 
-#### - [Contextual data augmentation](https://github.com/pfnet-research/contextual_augmentation) - Contextual augmentation is a domain-independent data augmentation for text classification tasks. Texts in supervised dataset are augmented by replacing words with other words which are predicted by a label-conditioned bi-directional language model. 
+#### - [Contextual data augmentation](https://github.com/pfnet-research/contextual_augmentation) ![](https://img.shields.io/github/stars/pfnet-research/contextual_augmentation.svg?style=social)  - Contextual augmentation is a domain-independent data augmentation for text classification tasks. Texts in supervised dataset are augmented by replacing words with other words which are predicted by a label-conditioned bi-directional language model. 
 This repository contains a collection of scripts for an experiment of [Contextual Augmentation](https://arxiv.org/pdf/1805.06201.pdf).
 
 ![example contextual data augmentation](https://i.imgur.com/JOyKkVt.png) 
@@ -196,9 +196,9 @@ Features:
 - **Random Swap (RS):** Randomly choose two words in the sentence and swap their positions. Do this *n* times.
 - **Random Deletion (RD):** For each word in the sentence, randomly remove it with probability *p*.
 
-#### - [Wiki Edits](https://github.com/snukky/wikiedits)  ![](https://img.shields.io/github/stars/jasonwei20/eda_nlp.svg?style=social) - A collection of scripts for automatic extraction of edited sentences from text edition histories, such as Wikipedia revisions. It was used to create the WikEd Error Corpus --- a corpus of corrective Wikipedia edits. The corpus has been prepared for two languages: Polish and English. Can be used as a dictionary-based augmentatioon to insert user-induced errors.
+#### - [Wiki Edits](https://github.com/snukky/wikiedits)  ![](https://img.shields.io/github/stars/snukky/wikiedits.svg?style=social) - A collection of scripts for automatic extraction of edited sentences from text edition histories, such as Wikipedia revisions. It was used to create the WikEd Error Corpus --- a corpus of corrective Wikipedia edits. The corpus has been prepared for two languages: Polish and English. Can be used as a dictionary-based augmentatioon to insert user-induced errors.
 
-#### - [TextAttack 🐙](https://github.com/QData/TextAttack)  ![](https://img.shields.io/github/stars/jasonwei20/eda_nlp.svg?style=social) - TextAttack is a Python framework for adversarial attacks, data augmentation, and model training in NLP.
+#### - [TextAttack 🐙](https://github.com/QData/TextAttack)  ![](https://img.shields.io/github/stars/QData/TextAttack.svg?style=social) - TextAttack is a Python framework for adversarial attacks, data augmentation, and model training in NLP.
 Many of the components of TextAttack are useful for data augmentation. The `textattack.Augmenter` class
 uses a transformation and a list of constraints to augment data. We also offer five built-in recipes
 for data augmentation [source:QData/TextAttack](https://github.com/QData/TextAttack):
