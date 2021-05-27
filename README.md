@@ -196,6 +196,19 @@ Features:
 - **Random Swap (RS):** Randomly choose two words in the sentence and swap their positions. Do this *n* times.
 - **Random Deletion (RD):** For each word in the sentence, randomly remove it with probability *p*.
 
+#### - [Wiki Edits](https://github.com/snukky/wikiedits)  ![](https://img.shields.io/github/stars/jasonwei20/eda_nlp.svg?style=social) - A collection of scripts for automatic extraction of edited sentences from text edition histories, such as Wikipedia revisions. It was used to create the WikEd Error Corpus --- a corpus of corrective Wikipedia edits. The corpus has been prepared for two languages: Polish and English. Can be used as a dictionary-based augmentatioon to insert user-induced errors.
+
+#### - [TextAttack 🐙](https://github.com/QData/TextAttack)  ![](https://img.shields.io/github/stars/jasonwei20/eda_nlp.svg?style=social) - TextAttack is a Python framework for adversarial attacks, data augmentation, and model training in NLP.
+Many of the components of TextAttack are useful for data augmentation. The `textattack.Augmenter` class
+uses a transformation and a list of constraints to augment data. We also offer five built-in recipes
+for data augmentation [source:QData/TextAttack](https://github.com/QData/TextAttack):
+- `textattack.WordNetAugmenter` augments text by replacing words with WordNet synonyms
+- `textattack.EmbeddingAugmenter` augments text by replacing words with neighbors in the counter-fitted embedding space, with a constraint to ensure their cosine similarity is at least 0.8
+- `textattack.CharSwapAugmenter` augments text by substituting, deleting, inserting, and swapping adjacent characters
+- `textattack.EasyDataAugmenter` augments text with a combination of word insertions, substitutions and deletions.
+- `textattack.CheckListAugmenter` augments text by contraction/extension and by substituting names, locations, numbers.
+- `textattack.CLAREAugmenter` augments text by replacing, inserting, and merging with a pre-trained masked language model.
+
 
 ## Audio
 #### - [SpecAugment with Pytorch](https://github.com/zcaceres/spec_augment) ![](https://img.shields.io/github/stars/zcaceres/spec_augment.svg?style=social) - (https://ai.googleblog.com/2019/04/specaugment-new-data-augmentation.html) is a state of the art data augmentation approach for speech recognition. It supports augmentations such as time wrap, time mask, frequency mask or all above combined.
