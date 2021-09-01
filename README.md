@@ -1,3 +1,8 @@
+
+
+[![DOI](https://zenodo.org/badge/211553569.svg)](https://zenodo.org/badge/latestdoi/211553569)
+
+
 # Data augmentation
 List of useful data augmentation resources. You will find here some links to more or less popular github repos :sparkles:, libraries, papers :books: and other information.
 
