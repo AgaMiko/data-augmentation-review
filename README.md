@@ -175,6 +175,11 @@ A multi-platform and open-source software able to create synthetic image documen
   - State-of-the-art performance (in combination with AutoAugment). 
 ![](https://github.com/zhiqiangdon/online-augment/raw/master/vis/STN.gif)
 
+#### - [Augraphy](https://github.com/sparkfish/augraphy) ![](https://img.shields.io/github/stars/sparkfish/augraphy.svg?style=social) - is a Python library that creates multiple copies of original documents though an augmentation pipeline that randomly distorts each copy -- degrading the clean version into dirty and realistic copies rendered through synthetic paper printing, faxing, scanning and copy machine processes.
+
+![](https://user-images.githubusercontent.com/74747193/135170284-8249fbab-2748-4230-821c-e56815e797cf.png)
+
+
 ## Natural Language Processing
 
 #### - [Contextual data augmentation](https://github.com/pfnet-research/contextual_augmentation) ![](https://img.shields.io/github/stars/pfnet-research/contextual_augmentation.svg?style=social)  - Contextual augmentation is a domain-independent data augmentation for text classification tasks. Texts in supervised dataset are augmented by replacing words with other words which are predicted by a label-conditioned bi-directional language model. 
