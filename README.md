@@ -1,6 +1,6 @@
 
 
-[![DOI](https://zenodo.org/badge/211553569.svg)](https://zenodo.org/badge/latestdoi/211553569)
+[![DOI](https://zenodo.org/badge/211553569.svg)](https://zenodo.org/badge/latestdoi/211553569)  [![Visits Badge](https://badges.pufler.dev/visits/AgaMiko/data-augmentation-review)](https://badges.pufler.dev/visits/AgaMiko/data-augmentation-review)
 
 
 # Data augmentation
