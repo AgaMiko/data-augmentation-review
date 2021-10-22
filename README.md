@@ -175,8 +175,14 @@ A multi-platform and open-source software able to create synthetic image documen
   - State-of-the-art performance (in combination with AutoAugment). 
 ![](https://github.com/zhiqiangdon/online-augment/raw/master/vis/STN.gif)
 
+#### - [Augraphy](https://github.com/sparkfish/augraphy) ![](https://img.shields.io/github/stars/sparkfish/augraphy.svg?style=social) - is a Python library that creates multiple copies of original documents though an augmentation pipeline that randomly distorts each copy -- degrading the clean version into dirty and realistic copies rendered through synthetic paper printing, faxing, scanning and copy machine processes.
+
+![](https://user-images.githubusercontent.com/74747193/135170284-8249fbab-2748-4230-821c-e56815e797cf.png)
+
+
 #### - [Data Augmentation optimized for GAN (DAG)](https://github.com/sutd-visual-computing-group/dag-gans) ![](https://img.shields.io/github/stars/sutd-visual-computing-group/dag-gans.svg?style=social) - implementation in PyTorch and Tensorflow
 DAG-GAN provide simple implementations of the DAG modules in both PyTorch and TensorFlow, which can be easily integrated into any GAN models to improve the performance, especially in the case of limited data. We only illustrate some augmentation techniques (rotation, cropping, flipping, ...) as discussed in our paper, but our DAG is not limited to these augmentations. The more augmentation to be used, the better improvements DAG enhances the GAN models. It is also easy to design your augmentations within the modules. However, there may be a trade-off between the numbers of many augmentations to be used in DAG and the computational cost.
+
 
 ## Natural Language Processing
 
