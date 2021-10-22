@@ -1,6 +1,6 @@
 
 
-[![DOI](https://zenodo.org/badge/211553569.svg)](https://zenodo.org/badge/latestdoi/211553569)
+[![DOI](https://zenodo.org/badge/211553569.svg)](https://zenodo.org/badge/latestdoi/211553569)  [![Visits Badge](https://badges.pufler.dev/visits/AgaMiko/data-augmentation-review)](https://badges.pufler.dev/visits/AgaMiko/data-augmentation-review)
 
 
 # Data augmentation
@@ -180,6 +180,10 @@ A multi-platform and open-source software able to create synthetic image documen
 ![](https://user-images.githubusercontent.com/74747193/135170284-8249fbab-2748-4230-821c-e56815e797cf.png)
 
 
+#### - [Data Augmentation optimized for GAN (DAG)](https://github.com/sutd-visual-computing-group/dag-gans) ![](https://img.shields.io/github/stars/sutd-visual-computing-group/dag-gans.svg?style=social) - implementation in PyTorch and Tensorflow
+DAG-GAN provide simple implementations of the DAG modules in both PyTorch and TensorFlow, which can be easily integrated into any GAN models to improve the performance, especially in the case of limited data. We only illustrate some augmentation techniques (rotation, cropping, flipping, ...) as discussed in our paper, but our DAG is not limited to these augmentations. The more augmentation to be used, the better improvements DAG enhances the GAN models. It is also easy to design your augmentations within the modules. However, there may be a trade-off between the numbers of many augmentations to be used in DAG and the computational cost.
+
+
 ## Natural Language Processing
 
 #### - [Contextual data augmentation](https://github.com/pfnet-research/contextual_augmentation) ![](https://img.shields.io/github/stars/pfnet-research/contextual_augmentation.svg?style=social)  - Contextual augmentation is a domain-independent data augmentation for text classification tasks. Texts in supervised dataset are augmented by replacing words with other words which are predicted by a label-conditioned bi-directional language model. 
@@ -266,6 +270,58 @@ Among others, it implements the augmentations that we found to be most useful fo
 ![](https://tsaug.readthedocs.io/en/stable/_images/notebook_Examples_of_augmenters_3_0.png)
 
 # Papers
+## 2021
+* [Data Augmentation for Scene Text Recognition](https://arxiv.org/abs/2108.06949);Rowel Atienza; Scene text recognition (STR) is a challenging task in computer vision due to the large number of possible text appearances in natural scenes. Most STR models rely on synthetic datasets for training since there are no sufficiently big and publicly available labelled real datasets. Since STR models are evaluated using real data, the mismatch between training and testing data distributions results into poor performance of models especially on challenging text that are affected by noise, artifacts, geometry, structure, etc. In this paper, we introduce STRAug which is made of 36 image augmentation functions designed for STR. Each function mimics certain text image properties that can be found in natural scenes, caused by camera sensors, or induced by signal processing operations but poorly represented in the training dataset. When applied to strong baseline models using RandAugment, STRAug significantly increases the overall absolute accuracy of STR models across regular and irregular test datasets by as much as 2.10% on Rosetta, 1.48% on R2AM, 1.30% on CRNN, 1.35% on RARE, 1.06% on TRBA and 0.89% on GCRNN. The diversity and simplicity of API provided by STRAug functions enable easy replication and validation of existing data augmentation methods for STR. STRAug is available at [this https URL](https://github.com/roatienza/straug). 
+* [Object-Based Augmentation for Building Semantic Segmentation: Ventura and Santa Rosa Case Study](https://openaccess.thecvf.com/content/ICCV2021W/ILDAV/papers/Illarionova_Object-Based_Augmentation_for_Building_Semantic_Segmentation_Ventura_and_Santa_Rosa_ICCVW_2021_paper.pdf);Svetlana Illarionova (Skolkovo institute of Science and Technology)*; Sergey Nesteruk (Skoltech); Dmitrii Shadrin (Skoltech); Vladimir Ignatiev (Skoltech); Maria Pukalchik (Skolkovo Institute of Science and Technology); Ivan Oseledets (Skolkovo Institute of Science and Technology); Today deep convolutional neural networks (CNNs) push
+the limits for most computer vision problems, define trends,
+and set state-of-the-art results. In remote sensing tasks
+such as object detection and semantic segmentation, CNNs
+reach the SotA performance. However, for precise per-
+formance, CNNs require much high-quality training data.
+Rare objects and the variability of environmental conditions
+strongly affect prediction stability and accuracy. To over-
+come these data restrictions, it is common to consider var-
+ious approaches including data augmentation techniques.
+This study focuses on the development and testing of object-
+based augmentation. The practical usefulness of the devel-
+oped augmentation technique is shown in the remote sens-
+ing domain, being one of the most demanded in effective
+augmentation techniques. We propose a novel pipeline for
+georeferenced image augmentation that enables a signifi-
+cant increase in the number of training samples. The pre-
+sented pipeline is called object-based augmentation (OBA)
+and exploits objects’ segmentation masks to produce new
+realistic training scenes using target objects and various
+label-free backgrounds. We test the approach on the build-
+ings segmentation dataset with different CNN architectures
+(U-Net, FPN, HRNet) and show that the proposed method
+benefits for all the tested models. We also show that further
+augmentation strategy optimization can improve the results.
+The proposed method leads to the meaningful improvement
+of U-Net model predictions from 0.78 to 0.83 F1-score
+
+* [Bounding Box Dataset Augmentation for Long-range Object Distance Estimation](https://openaccess.thecvf.com/content/ICCV2021W/ILDAV/papers/Franke_Bounding_Box_Dataset_Augmentation_for_Long-Range_Object_Distance_Estimation_ICCVW_2021_paper.pdf);Marten Franke (University of Bremen)*; Vaishnavi Gopinath (University of Bremen); Chaitra Reddy (University of Bremen); Danijela Ristic-Durrant (University of Bremen); Kai Michels (University of Bremen); 
+Autonomous long-range obstacle detection and distance
+estimation plays an important role in numerous applica-
+tions such as railway applications when it comes to lo-
+comotive drivers support or developments towards driver-
+less trains. To overcome the problem of small training
+datasets, this paper presents two data augmentation meth-
+ods for training the ANN DisNet to perform reliable long-
+range distance estimation.
+
+* [InAugment: Improving Classifiers via Internal Augmentation](https://arxiv.org/abs/2104.03843);Moab Arar, Ariel Shamir, Amit Bermano; Image augmentation techniques apply transformation functions such as rotation, shearing, or color distortion on an input image. These augmentations were proven useful in improving neural networks' generalization ability. In this paper, we present a novel augmentation operation, InAugment, that exploits image internal statistics. The key idea is to copy patches from the image itself, apply augmentation operations on them, and paste them back at random positions on the same image. This method is simple and easy to implement and can be incorporated with existing augmentation techniques. We test InAugment on two popular datasets -- CIFAR and ImageNet. We show improvement over state-of-the-art augmentation techniques. Incorporating InAugment with Auto Augment yields a significant improvement over other augmentation techniques (e.g., +1% improvement over multiple architectures trained on the CIFAR dataset). We also demonstrate an increase for ResNet50 and EfficientNet-B3 top-1's accuracy on the ImageNet dataset compared to prior augmentation methods. Finally, our experiments suggest that training convolutional neural network using InAugment not only improves the model's accuracy and confidence but its performance on out-of-distribution images. 
+![](https://raw.githubusercontent.com/moabarar/inaugment/main/InAugment_2.gif)
+
+* [On Feature Normalization and Data Augmentation](https://openaccess.thecvf.com/content/CVPR2021/html/Li_On_Feature_Normalization_and_Data_Augmentation_CVPR_2021_paper.html);Boyi Li, Felix Wu, Ser-Nam Lim, Serge Belongie, Kilian Q. Weinberger;The moments (a.k.a., mean and standard deviation) of latent features are often removed as noise when training image recognition models, to increase stability and reduce training time. However, in the field of image generation, the moments play a much more central role. Studies have shown that the moments extracted from instance normalization and positional normalization can roughly capture style and shape information of an image. Instead of being discarded, these moments are instrumental to the generation process. In this paper we propose Moment Exchange, an implicit data augmentation method that encourages the model to utilize the moment information also for recognition models. Specifically, we replace the moments of the learned features of one training image by those of another, and also interpolate the target labels---forcing the model to extract training signal from the moments in addition to the normalized features. As our approach is fast, operates entirely in feature space, and mixes different signals than prior methods, one can effectively combine it with existing augmentation approaches. We demonstrate its efficacy across several recognition benchmark data sets where it improves the generalization capability of highly competitive baseline networks with remarkable consistency.
+
+* [An empirical survey of data augmentation for time series classification with neural networks](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841); Brian Kenji Iwana,Seiichi Uchida; In recent times, deep artificial neural networks have achieved many successes in pattern recognition. Part of this success can be attributed to the reliance on big data to increase generalization. However, in the field of time series recognition, many datasets are often very small. One method of addressing this problem is through the use of data augmentation. In this paper, we survey data augmentation techniques for time series and their application to time series classification with neural networks. We propose a taxonomy and outline the four families in time series data augmentation, including transformation-based methods, pattern mixing, generative models, and decomposition methods. Furthermore, we empirically evaluate 12 time series data augmentation methods on 128 time series classification datasets with six different types of neural networks. Through the results, we are able to analyze the characteristics, advantages and disadvantages, and recommendations of each data augmentation method. This survey aims to help in the selection of time series data augmentation for neural network applications.
+
+* [ Simple Copy-Paste Is a Strong Data Augmentation Method for Instance Segmentation](https://openaccess.thecvf.com/content/CVPR2021/html/Ghiasi_Simple_Copy-Paste_Is_a_Strong_Data_Augmentation_Method_for_Instance_CVPR_2021_paper.html);Golnaz Ghiasi, Yin Cui, Aravind Srinivas, Rui Qian, Tsung-Yi Lin, Ekin D. Cubuk, Quoc V. Le, Barret Zoph; 
+Building instance segmentation models that are data-efficient and can handle rare object categories is an important challenge in computer vision. Leveraging data augmentations is a promising direction towards addressing this challenge. Here, we perform a systematic study of the Copy-Paste augmentation (e.g., [13, 12]) for instance segmentation where we randomly paste objects onto an image. Prior studies on Copy-Paste relied on modeling the surrounding visual context for pasting the objects. However, we find that the simple mechanism of pasting objects randomly is good enough and can provide solid gains on top of strong baselines. Furthermore, we show Copy-Paste is additive with semi-supervised methods that leverage extra data through pseudo labeling (eg. self-training). On COCO instance segmentation, we achieve 49.1 mask AP and 57.3 box AP, an improvement of +0.6 mask AP and +1.5 box AP over the previous state-of-the-art. We further demonstrate that Copy-Paste can lead to significant improvements on the LVIS benchmark. Our baseline model outperforms the LVIS 2020 Challenge winning entry by +3.6 mask AP on rare categories. 
+
+* [On Data Augmentation for GAN Training](https://ieeexplore.ieee.org/abstract/document/9319516?casa_token=EdlTyE--zs0AAAAA:yih_1T-sPQ6HnZodd3tsPIgd_3UFmVy0Wf5sksZCg-J3pnnU4xLK-C2KSMJ4ZQMu81ueTF-jMA);Ngoc-Trung Tran, Viet-Hung Tran, Ngoc-Bao Nguyen, Trung-Kien Nguyen; Ngai-Man Cheung; Recent successes in Generative Adversarial Networks (GAN) have affirmed the importance of using more data in GAN training. Yet it is expensive to collect data in many domains such as medical applications. Data Augmentation (DA) has been applied in these applications. In this work, we first argue that the classical DA approach could mislead the generator to learn the distribution of the augmented data, which could be different from that of the original data. We then propose a principled framework, termed Data Augmentation Optimized for GAN (DAG), to enable the use of augmented data in GAN training to improve the learning of the original distribution. We provide theoretical analysis to show that using our proposed DAG aligns with the original GAN in minimizing the Jensen-Shannon (JS) divergence between the original distribution and model distribution. Importantly, the proposed DAG effectively leverages the augmented data to improve the learning of discriminator and generator. We conduct experiments to apply DAG to different GAN models: unconditional GAN, conditional GAN, self-supervised GAN and CycleGAN using datasets of natural images and medical images. The results show that DAG achieves consistent and considerable improvements across these models. Furthermore, when DAG is used in some GAN models, the system establishes state-of-the-art Fréchet Inception Distance (FID) scores. Our code is available (https://github.com/tntrung/dag-gans).
+
 ## 2020
 * [CopyPaste: An Augmentation Method for Speech Emotion Recognition](https://arxiv.org/abs/2010.14602v1);Raghavendra Pappagari, Jesús Villalba, Piotr Żelasko, Laureano Moro-Velazquez, Najim Dehak; Data augmentation is a widely used strategy for training robust machine learning models. It partially alleviates the problem of limited data for tasks like speech emotion recognition (SER), where collecting data is expensive and challenging. This study proposes CopyPaste, a perceptually motivated novel augmentation procedure for SER. Assuming that the presence of emotions other than neutral dictates a speaker's overall perceived emotion in a recording, concatenation of an emotional (emotion E) and a neutral utterance can still be labeled with emotion E. We hypothesize that SER performance can be improved using these concatenated utterances in model training. To verify this, three CopyPaste schemes are tested on two deep learning models: one trained independently and another using transfer learning from an x-vector model, a speaker recognition model. We observed that all three CopyPaste schemes improve SER performance on all the three datasets considered: MSP-Podcast, Crema-D, and IEMOCAP. Additionally, CopyPaste performs better than noise augmentation and, using them together improves the SER performance further. Our experiments on noisy test sets suggested that CopyPaste is effective even in noisy test conditions
 
@@ -509,5 +565,16 @@ Papers:
 ## Challenges
 * [AutoDL 2019 (NeurIPS AutoDL challenges - includes AutoAugment)](https://autodl.chalearn.org/) - Machine Learning and in particular Deep Learning has achieved considerable successes in recent years and an ever-growing number of disciplines rely on it. However, this success crucially relies on human intervention in many steps (data pre-processing, feature engineering, model selection, hyper-parameter optimization, etc.). As the complexity of these tasks is often beyond non-experts, the rapid growth of machine learning applications has created a demand for off-the-shelf or reusable methods, which can be used easily and without expert knowledge. **The objective of AutoML (Automated Machine Learning) challenges is to provide "universal learning machines" (deep learning or others), which can learn and make predictions without human intervention (blind testing).** 
 
+## Workshops
+* [Interactive Labeling and Data Augmentation for Vision
+ICCV 2021 Workshop](https://ildav-workshop.github.io/program/) - The workshop on Interactive Labeling and Data Augmentation for Vision (ILDAV) wishes to address novel ways to solve computer vision problems where large quantities of labeled image data may not be readily available. It is important that datasets of sufficient size can be quickly and cheaply acquired and labeled. More specifically, we are interested in solutions to this problem that make use of (i) few-click and interactive data annotation, where machine learning is used to enhance human annotation skill, (ii) synthetic data generation, where one uses artificially generated data to augment real datasets, and (iii) weak supervision, where auxiliary or weak signals are used instead of (or to complement) manual labels.
 
-Feel free to add here links to your own resources, papers, blog posts!
+More broadly, we aim at fostering a collaboration between academia and industry in terms of leveraging machine learning research and human-in-the-loop, interactive labeling to quickly build datasets that will enable the use of powerful deep models in all problems of computer vision.
+
+The workshop topics include (but are not limited to):
+
+* Interactive and Few-click annotation
+* Data augmentation
+* Synthetic data for training models
+* Weak supervision
+* Human-in-the-loop learning 
