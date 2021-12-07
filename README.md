@@ -11,6 +11,10 @@ Feel free to pull request!
 
 * [Introduction](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Introduction)
 * [Repositories](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Repositories)
+	* [Computer vision](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Computer-vision)
+	* [NLP](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Natural-Language-Processing)
+	* [Audio](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Audio)
+	* [Time series](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Time-series)
 * [Papers](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Papers)
 * [AutoAugment - repos and papers](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#AutoAugment)
 * [Other - challenges, workshops, tutorials, books](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Other)
@@ -24,7 +28,7 @@ Example data augmentation techniques are presented on the diagram below.
 ![data augmentation diagram](images/da_diagram_v2.png)
 
 ## DATA AUGMENTATION
-* ### Images
+* ### Images augmentation
 	* Affine transformations
 		* Rotation
 		* Scaling
@@ -43,7 +47,7 @@ Example data augmentation techniques are presented on the diagram below.
 		* Adversarial noise
 		* Neural Style Transfer
 		* Generative Adversarial Networks
-* ### Audio
+* ### Audio augmentation
 	* Noise injection
 	* Time shift
 	* Time stretching
@@ -52,14 +56,14 @@ Example data augmentation techniques are presented on the diagram below.
 	* Dynamic range compression
 	* Simple gain
 	* Equalization
-* ### Natural Language Processing
+* ### Natural Language Processing augmentation
 	* Thesaurus
 	* Text Generation
 	* Back Translation
 	* Word Embeddings
 	* Contextualized Word Embeddings
 	* Voice conversion
-* ### Time Series Data Augmentation
+* ### Time Series Data Augmentation 
 	* Basic approaches
 		* Warping
 		* Jittering
@@ -207,11 +211,6 @@ DAG-GAN provide simple implementations of the DAG modules in both PyTorch and Te
 
 ## Natural Language Processing
 
-#### - [Contextual data augmentation](https://github.com/pfnet-research/contextual_augmentation) ![](https://img.shields.io/github/stars/pfnet-research/contextual_augmentation.svg?style=social)  - Contextual augmentation is a domain-independent data augmentation for text classification tasks. Texts in supervised dataset are augmented by replacing words with other words which are predicted by a label-conditioned bi-directional language model. 
-This repository contains a collection of scripts for an experiment of [Contextual Augmentation](https://arxiv.org/pdf/1805.06201.pdf).
-
-![example contextual data augmentation](https://i.imgur.com/JOyKkVt.png) 
-
 #### - [nlpaug](https://github.com/makcedward/nlpaug)  ![](https://img.shields.io/github/stars/makcedward/nlpaug.svg?style=social) - This python library helps you with augmenting nlp for your machine learning projects. Visit this introduction to understand about [Data Augmentation in NLP](https://towardsdatascience.com/data-augmentation-in-nlp-2801a34dfc28). `Augmenter` is the basic element of augmentation while `Flow` is a pipeline to orchestra multi augmenter together.
 
 Features:
@@ -224,15 +223,6 @@ Features:
 ![Example audio augmentations](https://github.com/makcedward/nlpaug/raw/master/res/audio_example.png)
 
 
-#### - [EDA NLP](https://github.com/jasonwei20/eda_nlp)  ![](https://img.shields.io/github/stars/jasonwei20/eda_nlp.svg?style=social) - **EDA** is an **e**asy **d**ata **a**ugmentation techniques for boosting performance on text classification tasks. These are a generalized set of data augmentation techniques that are easy to implement and have shown improvements on five NLP classification tasks, with substantial improvements on datasets of size `N < 500`. While other techniques require you to train a language model on an external dataset just to get a small boost, we found that simple text editing operations using EDA result in good performance gains. Given a sentence in the training set, we perform the following operations:
-
-- **Synonym Replacement (SR):** Randomly choose *n* words from the sentence that are not stop words. Replace each of these words with one of its synonyms chosen at random.
-- **Random Insertion (RI):** Find a random synonym of a random word in the sentence that is not a stop word. Insert that synonym into a random position in the sentence. Do this *n* times.
-- **Random Swap (RS):** Randomly choose two words in the sentence and swap their positions. Do this *n* times.
-- **Random Deletion (RD):** For each word in the sentence, randomly remove it with probability *p*.
-
-#### - [Wiki Edits](https://github.com/snukky/wikiedits)  ![](https://img.shields.io/github/stars/snukky/wikiedits.svg?style=social) - A collection of scripts for automatic extraction of edited sentences from text edition histories, such as Wikipedia revisions. It was used to create the WikEd Error Corpus --- a corpus of corrective Wikipedia edits. The corpus has been prepared for two languages: Polish and English. Can be used as a dictionary-based augmentatioon to insert user-induced errors.
-
 #### - [TextAttack 🐙](https://github.com/QData/TextAttack)  ![](https://img.shields.io/github/stars/QData/TextAttack.svg?style=social) - TextAttack is a Python framework for adversarial attacks, data augmentation, and model training in NLP.
 Many of the components of TextAttack are useful for data augmentation. The `textattack.Augmenter` class
 uses a transformation and a list of constraints to augment data. We also offer five built-in recipes
@@ -243,6 +233,22 @@ for data augmentation [source:QData/TextAttack](https://github.com/QData/TextAtt
 - `textattack.EasyDataAugmenter` augments text with a combination of word insertions, substitutions and deletions.
 - `textattack.CheckListAugmenter` augments text by contraction/extension and by substituting names, locations, numbers.
 - `textattack.CLAREAugmenter` augments text by replacing, inserting, and merging with a pre-trained masked language model.
+
+#### - [EDA NLP](https://github.com/jasonwei20/eda_nlp)  ![](https://img.shields.io/github/stars/jasonwei20/eda_nlp.svg?style=social) - **EDA** is an **e**asy **d**ata **a**ugmentation techniques for boosting performance on text classification tasks. These are a generalized set of data augmentation techniques that are easy to implement and have shown improvements on five NLP classification tasks, with substantial improvements on datasets of size `N < 500`. While other techniques require you to train a language model on an external dataset just to get a small boost, we found that simple text editing operations using EDA result in good performance gains. Given a sentence in the training set, we perform the following operations:
+
+- **Synonym Replacement (SR):** Randomly choose *n* words from the sentence that are not stop words. Replace each of these words with one of its synonyms chosen at random.
+- **Random Insertion (RI):** Find a random synonym of a random word in the sentence that is not a stop word. Insert that synonym into a random position in the sentence. Do this *n* times.
+- **Random Swap (RS):** Randomly choose two words in the sentence and swap their positions. Do this *n* times.
+- **Random Deletion (RD):** For each word in the sentence, randomly remove it with probability *p*.
+
+#### - [NL-Augmenter 🦎 → 🐍](https://github.com/GEM-benchmark/NL-Augmenter)  ![](https://img.shields.io/github/stars/GEM-benchmark/NL-Augmenter.svg?style=social) - The NL-Augmenter is a collaborative effort intended to add transformations of datasets dealing with natural language. Transformations augment text datasets in diverse ways, including: randomizing names and numbers, changing style/syntax, paraphrasing, KB-based paraphrasing ... and whatever creative augmentation you contribute. We invite submissions of transformations to this framework by way of GitHub pull request, through August 31, 2021. All submitters of accepted transformations (and filters) will be included as co-authors on a paper announcing this framework.
+
+#### - [Contextual data augmentation](https://github.com/pfnet-research/contextual_augmentation) ![](https://img.shields.io/github/stars/pfnet-research/contextual_augmentation.svg?style=social)  - Contextual augmentation is a domain-independent data augmentation for text classification tasks. Texts in supervised dataset are augmented by replacing words with other words which are predicted by a label-conditioned bi-directional language model. 
+This repository contains a collection of scripts for an experiment of [Contextual Augmentation](https://arxiv.org/pdf/1805.06201.pdf).
+
+![example contextual data augmentation](https://i.imgur.com/JOyKkVt.png) 
+
+#### - [Wiki Edits](https://github.com/snukky/wikiedits)  ![](https://img.shields.io/github/stars/snukky/wikiedits.svg?style=social) - A collection of scripts for automatic extraction of edited sentences from text edition histories, such as Wikipedia revisions. It was used to create the WikEd Error Corpus --- a corpus of corrective Wikipedia edits. The corpus has been prepared for two languages: Polish and English. Can be used as a dictionary-based augmentatioon to insert user-induced errors.
 
 #### - [Text AutoAugment (TAA)](https://github.com/lancopku/text-autoaugment)  ![](https://img.shields.io/github/stars/lancopku/text-autoaugment.svg?style=social) - Text AutoAugment is a learnable and compositional framework for data augmentation in NLP. The proposed algorithm automatically searches for the optimal compositional policy, which improves the diversity and quality of augmented samples.
 
