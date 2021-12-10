@@ -12,6 +12,7 @@ Feel free to pull request!
 	* [NLP](README.md#Natural-Language-Processing)
 	* [Audio](README.md#Audio)
 	* [Time series](README.md#Time-series)
+	* [AutoAugment](README.md#AutoAugment)
 * [Papers](papers.md)
 	* [2021](papers.md#2021)
 	* [2020](papers.md#2020)
@@ -19,7 +20,7 @@ Feel free to pull request!
 	* [2018](papers.md#2018)
 	* [2017](papers.md#2017)
 	* [2015](papers.md#2015)
-* [AutoAugment - repos and papers](README.md#AutoAugment)
+	* [AutoAugment](papers.md#autoaugment)
 * [Other - challenges, workshops, tutorials, books](README.md#Other)
 
 # 
