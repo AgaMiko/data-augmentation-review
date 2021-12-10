@@ -7,15 +7,16 @@ List of useful data augmentation resources. You will find here some links to mor
 Do you like it? Feel free to :star: !
 Feel free to pull request!
 
-* [Introduction](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Introduction)
-* [Repositories](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Repositories)
-	* [Computer vision](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Computer-vision)
-	* [NLP](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Natural-Language-Processing)
-	* [Audio](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Audio)
-	* [Time series](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Time-series)
-* [Papers](https://github.com/AgaMiko/data-augmentation-review/blob/master/papers.md#Papers)
-* [AutoAugment - repos and papers](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#AutoAugment)
-* [Other - challenges, workshops, tutorials, books](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Other)
+* [Introduction](README.md#Introduction)
+* [Repositories](README.md#Repositories)
+	* [Computer vision](README.md#Computer-vision)
+	* [NLP](README.md#Natural-Language-Processing)
+	* [Audio](README.md#Audio)
+	* [Time series](README.md#Time-series)
+	* [AutoAugment](README.md#AutoAugment)
+* [Papers](papers.md)
+* [Other - challenges, workshops, tutorials, books](README.md#Other)
+
 
 
 # Introduction
@@ -70,7 +71,7 @@ Example data augmentation techniques are presented on the diagram below.
 		* Embedding space
 		* GAN/Adversarial
 		* RL/Meta-Learning
-* ### AutoAugment
+* ### Automatic Augmentation (AutoAugment)
 
 If you wish to cite us, you can cite followings paper of your choice:  [Style transfer-based image synthesis as an efficient regularization technique in deep learning](https://ieeexplore.ieee.org/document/8864616) or [Data augmentation for improving deep learning in image classification problem](https://ieeexplore.ieee.org/document/8388338).
 
@@ -282,7 +283,7 @@ Among others, it implements the augmentations that we found to be most useful fo
 * Clipping
 
 ## Time series
-#### - [tsaug](https://github.com/arundo/tsaug) ![](https://img.shields.io/github/stars/tsaug/spec_augment.svg?style=social) - 
+#### - [tsaug](https://github.com/arundo/tsaug) ![](https://img.shields.io/github/stars/arundo/tsaug.svg?style=social)
  is a Python package for time series augmentation. It offers a set of augmentation methods for time series, as well as a simple API to connect multiple augmenters into a pipeline. 
 
  Example augmenters:
@@ -299,7 +300,6 @@ Among others, it implements the augmentations that we found to be most useful fo
 Automatic Data Augmentation is a family of algorithms that searches for the policy of augmenting the dataset for solivng the selcted task.
 
 Github repositories:
-* [tensorflow - autoaugment implementation](https://github.com/tensorflow/models/tree/master/research/autoaugment) ![](https://img.shields.io/github/stars/tensorflow/autoaugment.svg?style=social)
 * [Text AutoAugment (TAA)](https://github.com/lancopku/text-autoaugment) ![](https://img.shields.io/github/stars/lancopku/text-autoaugment.svg?style=social)
 * [Official Fast AutoAugment implementation in PyTorch](https://github.com/kakaobrain/fast-autoaugment) ![](https://img.shields.io/github/stars/kakaobrain/fast-autoaugment.svg?style=social)
 * [AutoCLINT - Automatic Computationally LIght Network Transfer (A specially designed light version of Fast AutoAugment is implemented to adapt to various tasks under limited resources)](https://github.com/kakaobrain/autoclint) ![](https://img.shields.io/github/stars/kakaobrain/autoclint.svg?style=social)
