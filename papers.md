@@ -6,16 +6,23 @@ List of useful data augmentation resources. You will find here some links to mor
 Do you like it? Feel free to :star: !
 Feel free to pull request!
 
-* [Introduction](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Introduction)
-* [Repositories](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Repositories)
-	* [Computer vision](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Computer-vision)
-	* [NLP](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Natural-Language-Processing)
-	* [Audio](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Audio)
-	* [Time series](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Time-series)
-* [Papers](https://github.com/AgaMiko/data-augmentation-review/blob/master/papers.md#Papers)
-* [AutoAugment - repos and papers](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#AutoAugment)
-* [Other - challenges, workshops, tutorials, books](https://github.com/AgaMiko/data-augmentation-review/blob/master/README.md#Other)
+* [Introduction](README.md#Introduction)
+* [Repositories](README.md#Repositories)
+	* [Computer vision](README.md#Computer-vision)
+	* [NLP](README.md#Natural-Language-Processing)
+	* [Audio](README.md#Audio)
+	* [Time series](README.md#Time-series)
+* [Papers](papers.md)
+	* [2021](papers.md#2021)
+	* [2020](papers.md#2020)
+	* [2019](papers.md#2019)
+	* [2018](papers.md#2018)
+	* [2017](papers.md#2017)
+	* [2015](papers.md#2015)
+* [AutoAugment - repos and papers](README.md#AutoAugment)
+* [Other - challenges, workshops, tutorials, books](README.md#Other)
 
+# 
 
 ## 2021
 * [Data Augmentation for Scene Text Recognition](https://arxiv.org/abs/2108.06949);Rowel Atienza; Scene text recognition (STR) is a challenging task in computer vision due to the large number of possible text appearances in natural scenes. Most STR models rely on synthetic datasets for training since there are no sufficiently big and publicly available labelled real datasets. Since STR models are evaluated using real data, the mismatch between training and testing data distributions results into poor performance of models especially on challenging text that are affected by noise, artifacts, geometry, structure, etc. In this paper, we introduce STRAug which is made of 36 image augmentation functions designed for STR. Each function mimics certain text image properties that can be found in natural scenes, caused by camera sensors, or induced by signal processing operations but poorly represented in the training dataset. When applied to strong baseline models using RandAugment, STRAug significantly increases the overall absolute accuracy of STR models across regular and irregular test datasets by as much as 2.10% on Rosetta, 1.48% on R2AM, 1.30% on CRNN, 1.35% on RARE, 1.06% on TRBA and 0.89% on GCRNN. The diversity and simplicity of API provided by STRAug functions enable easy replication and validation of existing data augmentation methods for STR. STRAug is available at [this https URL](https://github.com/roatienza/straug). 
