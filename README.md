@@ -71,6 +71,10 @@ Example data augmentation techniques are presented on the diagram below.
 		* Embedding space
 		* GAN/Adversarial
 		* RL/Meta-Learning
+* ### Graph Augmentation
+	* Node/edge dropping
+	* Node/edge addition (graph modification)
+	* Edge perturbation
 * ### Automatic Augmentation (AutoAugment)
 
 If you wish to cite us, you can cite followings paper of your choice:  [Style transfer-based image synthesis as an efficient regularization technique in deep learning](https://ieeexplore.ieee.org/document/8864616) or [Data augmentation for improving deep learning in image classification problem](https://ieeexplore.ieee.org/document/8388338).
