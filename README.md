@@ -10,9 +10,11 @@ Feel free to pull request!
 * [Introduction](README.md#Introduction)
 * [Repositories](README.md#Repositories)
 	* [Computer vision](README.md#Computer-vision)
-	* [NLP](README.md#Natural-Language-Processing)
-	* [Audio](README.md#Audio)
+	* [Natural Language Processing](README.md#Natural-Language-Processing)
+	* [Audio/Speech](README.md#Audio)
 	* [Time series](README.md#Time-series)
+	* [Graph Augmentation](README.md#Graph-Augmentation)
+	* [Gene expression Augmentation](README.md#Gene-expression-Augmentation)
 	* [AutoAugment](README.md#AutoAugment)
 * [Papers](papers.md)
 * [Other - challenges, workshops, tutorials, books](README.md#Other)
@@ -55,13 +57,15 @@ Example data augmentation techniques are presented on the diagram below.
 	* Dynamic range compression
 	* Simple gain
 	* Equalization
+	* Voice conversion (Speech)
 * ### Natural Language Processing augmentation
 	* Thesaurus
 	* Text Generation
 	* Back Translation
 	* Word Embeddings
 	* Contextualized Word Embeddings
-	* Voice conversion
+	* Paraphrasing
+	* Text perturbation
 * ### Time Series Data Augmentation 
 	* Basic approaches
 		* Warping
@@ -75,7 +79,15 @@ Example data augmentation techniques are presented on the diagram below.
 	* Node/edge dropping
 	* Node/edge addition (graph modification)
 	* Edge perturbation
+* ### Gene expression Augmentation 
+	* Data generation with GANs
+	* Mixing observations
+	* Random variable insertion
 * ### Automatic Augmentation (AutoAugment)
+* Other
+	* Keypoints/landmarks Augmentation - usually done with image augmentation (rotation, reflection) or graph augmentation methods (node/edge dropping)
+	* Spectrograms/Melspectrograms -  usually done with time series data augmentation (jittering, perturbing, warping) or image augmentation (random erasing)
+
 
 If you wish to cite us, you can cite followings paper of your choice:  [Style transfer-based image synthesis as an efficient regularization technique in deep learning](https://ieeexplore.ieee.org/document/8864616) or [Data augmentation for improving deep learning in image classification problem](https://ieeexplore.ieee.org/document/8388338).
 
