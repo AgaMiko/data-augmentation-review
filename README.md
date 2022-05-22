@@ -17,6 +17,14 @@ Feel free to pull request!
 	* [Gene expression Augmentation](README.md#Gene-expression-Augmentation)
 	* [AutoAugment](README.md#AutoAugment)
 * [Papers](papers.md)
+	* [2022](papers.md#2022)
+	* [2021](papers.md#2021)
+	* [2020](papers.md#2020)
+	* [2019](papers.md#2019)
+	* [2018](papers.md#2018)
+	* [2017](papers.md#2017)
+	* [2015](papers.md#2015)
+	* [AutoAugment](papers.md#autoaugment)
 * [Other - challenges, workshops, tutorials, books](README.md#Other)
 
 
