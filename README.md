@@ -223,6 +223,27 @@ A multi-platform and open-source software able to create synthetic image documen
 #### - [Data Augmentation optimized for GAN (DAG)](https://github.com/sutd-visual-computing-group/dag-gans) ![](https://img.shields.io/github/stars/sutd-visual-computing-group/dag-gans.svg?style=social) - implementation in PyTorch and Tensorflow
 DAG-GAN provide simple implementations of the DAG modules in both PyTorch and TensorFlow, which can be easily integrated into any GAN models to improve the performance, especially in the case of limited data. We only illustrate some augmentation techniques (rotation, cropping, flipping, ...) as discussed in our paper, but our DAG is not limited to these augmentations. The more augmentation to be used, the better improvements DAG enhances the GAN models. It is also easy to design your augmentations within the modules. However, there may be a trade-off between the numbers of many augmentations to be used in DAG and the computational cost.
 
+#### - [Unsupervised Data Augmentation (google-research/uda)](https://github.com/google-research/uda) ![](https://img.shields.io/github/stars/google-research/uda.svg?style=social) - implementation in Tensorflow.
+Unsupervised Data Augmentation or UDA is a semi-supervised learning method which achieves state-of-the-art results on a wide variety of language and vision tasks. With only 20 labeled examples, UDA outperforms the previous state-of-the-art on IMDb trained on 25,000 labeled examples.
+
+They are releasing the following:
+* Code for text classifications based on BERT.
+* Code for image classifications on CIFAR-10 and SVHN.
+* Code and checkpoints for our back translation augmentation system.
+
+
+#### - [AugLy](https://github.com/facebookresearch/AugLy) ![](https://img.shields.io/github/stars/facebookresearch/AugLy.svg?style=social)  - AugLy is a data augmentations library that currently supports four modalities (audio, image, text & video) and over 100 augmentations. 
+
+Each modality’s augmentations are contained within its own sub-library. These sub-libraries include both function-based and class-based transforms, composition operators, and have the option to provide metadata about the transform applied, including its intensity.
+
+AugLy is a great library to utilize for augmenting your data in model training, or to evaluate the robustness gaps of your model! We designed AugLy to include many specific data augmentations that users perform in real life on internet platforms like Facebook's -- for example making an image into a meme, overlaying text/emojis on images/videos, reposting a screenshot from social media. While AugLy contains more generic data augmentations as well, it will be particularly useful to you if you're working on a problem like copy detection, hate speech detection, or copyright infringement where these "internet user" types of data augmentations are prevalent.
+
+#### - [Data-Efficient GANs with DiffAugment](https://github.com/mit-han-lab/data-efficient-gans/) ![](https://img.shields.io/github/stars/mit-han-lab/data-efficient-gans.svg?style=social)  - contains implementation of Differentiable Augmentation (DiffAugment) in both PyTorch and TensorFlow.
+It can be used to significantly improve the data efficiency for GAN training. We have provided DiffAugment-stylegan2 (TensorFlow) and DiffAugment-stylegan2-pytorch, DiffAugment-biggan-cifar (PyTorch) for GPU training, and DiffAugment-biggan-imagenet (TensorFlow) for TPU training.
+
+[project](https://data-efficient-gans.mit.edu/) | [paper](https://arxiv.org/pdf/2006.10738) | [datasets](https://data-efficient-gans.mit.edu/datasets/) | [video](https://www.youtube.com/watch?v=SsqcjS6SVM0) | [slides](https://data-efficient-gans.mit.edu/slides.pdf)
+
+![Visual](https://github.com/mit-han-lab/data-efficient-gans/raw/master/imgs/interp.gif)
 
 ## Natural Language Processing
 
@@ -237,6 +258,11 @@ Features:
 ![example textual augmentations](https://github.com/makcedward/nlpaug/raw/master/res/textual_example.png)
 ![Example audio augmentations](https://github.com/makcedward/nlpaug/raw/master/res/audio_example.png)
 
+#### - [AugLy](https://github.com/facebookresearch/AugLy) ![](https://img.shields.io/github/stars/facebookresearch/AugLy.svg?style=social)  - AugLy is a data augmentations library that currently supports four modalities (audio, image, text & video) and over 100 augmentations. 
+
+Each modality’s augmentations are contained within its own sub-library. These sub-libraries include both function-based and class-based transforms, composition operators, and have the option to provide metadata about the transform applied, including its intensity.
+
+AugLy is a great library to utilize for augmenting your data in model training, or to evaluate the robustness gaps of your model! We designed AugLy to include many specific data augmentations that users perform in real life on internet platforms like Facebook's -- for example making an image into a meme, overlaying text/emojis on images/videos, reposting a screenshot from social media. While AugLy contains more generic data augmentations as well, it will be particularly useful to you if you're working on a problem like copy detection, hate speech detection, or copyright infringement where these "internet user" types of data augmentations are prevalent.
 
 #### - [TextAttack 🐙](https://github.com/QData/TextAttack)  ![](https://img.shields.io/github/stars/QData/TextAttack.svg?style=social) - TextAttack is a Python framework for adversarial attacks, data augmentation, and model training in NLP.
 Many of the components of TextAttack are useful for data augmentation. The `textattack.Augmenter` class
@@ -269,6 +295,15 @@ This repository contains a collection of scripts for an experiment of [Contextua
 
 ![text autoaugment](https://github.com/lancopku/text-autoaugment/blob/main/figures/taa.png?raw=true)
 
+#### - [Unsupervised Data Augmentation (google-research/uda)](https://github.com/google-research/uda) ![](https://img.shields.io/github/stars/google-research/uda.svg?style=social) - implementation in Tensorflow.
+Unsupervised Data Augmentation or UDA is a semi-supervised learning method which achieves state-of-the-art results on a wide variety of language and vision tasks. With only 20 labeled examples, UDA outperforms the previous state-of-the-art on IMDb trained on 25,000 labeled examples.
+
+They are releasing the following:
+* Code for text classifications based on BERT.
+* Code for image classifications on CIFAR-10 and SVHN.
+* Code and checkpoints for our back translation augmentation system.
+
+
 ## Audio
 #### - [SpecAugment with Pytorch](https://github.com/zcaceres/spec_augment) ![](https://img.shields.io/github/stars/zcaceres/spec_augment.svg?style=social) - (https://ai.googleblog.com/2019/04/specaugment-new-data-augmentation.html) is a state of the art data augmentation approach for speech recognition. It supports augmentations such as time wrap, time mask, frequency mask or all above combined.
 
@@ -298,6 +333,12 @@ Among others, it implements the augmentations that we found to be most useful fo
 * Band reject,
 * Clipping
 
+#### - [AugLy](https://github.com/facebookresearch/AugLy) ![](https://img.shields.io/github/stars/facebookresearch/AugLy.svg?style=social)  - AugLy is a data augmentations library that currently supports four modalities (audio, image, text & video) and over 100 augmentations. 
+
+Each modality’s augmentations are contained within its own sub-library. These sub-libraries include both function-based and class-based transforms, composition operators, and have the option to provide metadata about the transform applied, including its intensity.
+
+AugLy is a great library to utilize for augmenting your data in model training, or to evaluate the robustness gaps of your model! We designed AugLy to include many specific data augmentations that users perform in real life on internet platforms like Facebook's -- for example making an image into a meme, overlaying text/emojis on images/videos, reposting a screenshot from social media. While AugLy contains more generic data augmentations as well, it will be particularly useful to you if you're working on a problem like copy detection, hate speech detection, or copyright infringement where these "internet user" types of data augmentations are prevalent.
+
 ## Time series
 #### - [tsaug](https://github.com/arundo/tsaug) ![](https://img.shields.io/github/stars/arundo/tsaug.svg?style=social)
  is a Python package for time series augmentation. It offers a set of augmentation methods for time series, as well as a simple API to connect multiple augmenters into a pipeline. 
@@ -311,6 +352,11 @@ Among others, it implements the augmentations that we found to be most useful fo
 
 ![](https://tsaug.readthedocs.io/en/stable/_images/notebook_Examples_of_augmenters_3_0.png)
 
+#### - [Data Augmentation For Wearable Sensor Data](https://github.com/terryum/Data-Augmentation-For-Wearable-Sensor-Data) ![](https://img.shields.io/github/stars/terryum/Data-Augmentation-For-Wearable-Sensor-Data.svg?style=social) - a sample code of data augmentation methods for wearable sensor data (time-series data) based opn the paper below:
+
+T. T. Um et al., “Data augmentation of wearable sensor data for parkinson’s disease monitoring using convolutional neural networks,” in Proceedings of the 19th ACM International Conference on Multimodal Interaction, ser. ICMI 2017. New York, NY, USA: ACM, 2017, pp. 216–220.
+
+![](https://github.com/terryum/Data-Augmentation-For-Wearable-Sensor-Data/raw/master/DA_examples.png)
 
 ## AutoAugment
 Automatic Data Augmentation is a family of algorithms that searches for the policy of augmenting the dataset for solivng the selcted task.
