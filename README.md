@@ -1,5 +1,6 @@
 [![DOI](https://zenodo.org/badge/211553569.svg)](https://zenodo.org/badge/latestdoi/211553569)  [![Visits Badge](https://badges.pufler.dev/visits/AgaMiko/data-augmentation-review)](https://badges.pufler.dev/visits/AgaMiko/data-augmentation-review)
 
+Looking for a person who would like to help me maintain this repository! Contact me on [LN](https://www.linkedin.com/in/agnieszkamikolajczyk/) or simply add a PR!
 
 # Data augmentation
 List of useful data augmentation resources. You will find here some links to more or less popular github repos :sparkles:, libraries, papers :books: and other information.
