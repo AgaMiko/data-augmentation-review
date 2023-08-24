@@ -14,6 +14,7 @@ Feel free to pull request!
 	* [Time series](README.md#Time-series)
 	* [AutoAugment](README.md#AutoAugment)
 * [Papers](papers.md)
+	* [2023](papers.md#2023)
 	* [2022](papers.md#2022)
 	* [2021](papers.md#2021)
 	* [2020](papers.md#2020)
@@ -23,6 +24,9 @@ Feel free to pull request!
 	* [2015](papers.md#2015)
 	* [AutoAugment](papers.md#autoaugment)
 * [Other - challenges, workshops, tutorials, books](README.md#Other)
+
+## 2023
+* [Targeted Data Augmentation for bias mitigation](https://arxiv.org/abs/2308.11386); Agnieszka Mikołajczyk-Bareła, Maria Ferlin, Michał Grochowski; The development of fair and ethical AI systems requires careful consideration of bias mitigation, an area often overlooked or ignored. In this study, we introduce a novel and efficient approach for addressing biases called Targeted Data Augmentation (TDA), which leverages classical data augmentation techniques to tackle the pressing issue of bias in data and models. Unlike the laborious task of removing biases, our method proposes to insert biases instead, resulting in improved performance. To identify biases, we annotated two diverse datasets: a dataset of clinical skin lesions and a dataset of male and female faces. These bias annotations are published for the first time in this study, providing a valuable resource for future research. Through Counterfactual Bias Insertion, we discovered that biases associated with the frame, ruler, and glasses had a significant impact on models. By randomly introducing biases during training, we mitigated these biases and achieved a substantial decrease in bias measures, ranging from two-fold to more than 50-fold, while maintaining a negligible increase in the error rate. 
 
 ## 2022
 * [The Effects of Regularization and Data Augmentation are Class Dependent](https://arxiv.org/abs/2204.03632?fbclid=IwAR1Yp6ZNTiSQy152yw89n7qIDx6-aXPjv9AUlcWdExWba8hBGqdVfzKuHCw);Randall Balestriero, Leon Bottou, Yann LeCun; Regularization is a fundamental technique to prevent over-fitting and to improve generalization performances by constraining a model's complexity. Current Deep Networks heavily rely on regularizers such as Data-Augmentation (DA) or weight-decay, and employ structural risk minimization, i.e. cross-validation, to select the optimal regularization hyper-parameters. In this study, we demonstrate that techniques such as DA or weight decay produce a model with a reduced complexity that is unfair across classes. The optimal amount of DA or weight decay found from cross-validation leads to disastrous model performances on some classes e.g. on Imagenet with a resnet50, the "barn spider" classification test accuracy falls from 68% to 46% only by introducing random crop DA during training. Even more surprising, such performance drop also appears when introducing uninformative regularization techniques such as weight decay. Those results demonstrate that our search for ever increasing generalization performance -- averaged over all classes and samples -- has left us with models and regularizers that silently sacrifice performances on some classes. This scenario can become dangerous when deploying a model on downstream tasks e.g. an Imagenet pre-trained resnet50 deployed on INaturalist sees its performances fall from 70% to 30% on class \#8889 when introducing random crop DA during the Imagenet pre-training phase. Those results demonstrate that designing novel regularizers without class-dependent bias remains an open research question. 
