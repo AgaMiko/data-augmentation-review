@@ -2,6 +2,7 @@
 
 Looking for a person who would like to help me maintain this repository! Contact me on [LN](https://www.linkedin.com/in/agnieszkamikolajczyk/) or simply add a PR!
 
+
 # Data augmentation
 List of useful data augmentation resources. You will find here some links to more or less popular github repos :sparkles:, libraries, papers :books: and other information.
 
@@ -99,7 +100,10 @@ Example data augmentation techniques are presented on the diagram below.
 	* Spectrograms/Melspectrograms -  usually done with time series data augmentation (jittering, perturbing, warping) or image augmentation (random erasing)
 
 
-If you wish to cite us, you can cite followings paper of your choice:  [Style transfer-based image synthesis as an efficient regularization technique in deep learning](https://ieeexplore.ieee.org/document/8864616) or [Data augmentation for improving deep learning in image classification problem](https://ieeexplore.ieee.org/document/8388338).
+If you wish to cite us, you can cite following paper of your choice:  [Style transfer-based image synthesis as an efficient regularization technique in deep learning](https://ieeexplore.ieee.org/document/8864616) or [Data augmentation for improving deep learning in image classification problem](https://ieeexplore.ieee.org/document/8388338).
+
+
+[![Star History Chart](https://api.star-history.com/svg?repos=AgaMiko/data-augmentation-review&type=Date)](https://star-history.com/#AgaMiko/data-augmentation-review&Date)
 
 # Repositories
 
