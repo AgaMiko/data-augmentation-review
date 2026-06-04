@@ -261,6 +261,35 @@ It can be used to significantly improve the data efficiency for GAN training. We
 
 ![Visual](https://github.com/mit-han-lab/data-efficient-gans/raw/master/imgs/interp.gif)
 
+#### - [bnnr](https://github.com/bnnr-team/bnnr) ![](https://img.shields.io/github/stars/bnnr-team/bnnr?style=social) - a PyTorch toolkit for saliency-guided augmentation search. Unlike libraries that apply random or hand-picked transforms, bnnr conditions augmentation on the model's own attention maps: it computes OptiCAM saliency on the current checkpoint and uses the resulting heatmaps to decide *where* to augment — then runs a branch search that keeps only the strategies that measurably improve validation accuracy.
+
+Two core augmentation methods:
+
+**ICD (Intra-Class Diversification)** — masks the regions the model already focuses on (highest-saliency tiles), forcing it to stop relying on texture shortcuts and learn from surrounding context instead.
+
+![ICD panel](https://raw.githubusercontent.com/bnnr-team/bnnr/main/docs/assets/icd-panel.png)
+
+**AICD (Anti-ICD)** — masks low-saliency background and irrelevant textures, sharpening the model's attention toward discriminative features.
+
+![AICD panel](https://raw.githubusercontent.com/bnnr-team/bnnr/main/docs/assets/aicd-panel.png)
+
+The effect on where the model looks is visible in OptiCAM overlays. After branch search (ICD + AICD + ChurchNoise), saliency concentrates on the object rather than image edges or background:
+
+![XAI comparison before and after bnnr branch search](https://raw.githubusercontent.com/bnnr-team/bnnr/main/docs/assets/benchmark-xai-comparison.png)
+
+Illustrative benchmark on CIFAR-10 (demo CNN, 3 seeds, not SOTA):
+
+| Setup | Validation accuracy |
+|-------|---------------------|
+| Crop + flip only | 75.3% |
+| RandAugment | 72.5% |
+| BNNR branch search | 81.4% |
+
+The toolkit also includes `bnnr analyze` — a standalone diagnostic that generates a self-contained HTML failure report with saliency overlays from any trained checkpoint, without retraining.
+
+* [One-click Colab quickstart](https://colab.research.google.com/github/bnnr-team/bnnr/blob/main/examples/classification/bnnr_classification_demo.ipynb)
+* [Sample analyze HTML report](https://raw.githack.com/bnnr-team/bnnr/refs/heads/main/docs/assets/analyze-report-sample.html) (MNIST, real run — no install required)
+
 ## Natural Language Processing
 
 #### - [nlpaug](https://github.com/makcedward/nlpaug)  ![](https://img.shields.io/github/stars/makcedward/nlpaug.svg?style=social) - This Python library helps you with augmenting nlp for your machine learning projects. Visit this introduction to understand about [Data Augmentation in NLP](https://towardsdatascience.com/data-augmentation-in-nlp-2801a34dfc28). `Augmenter` is the basic element of augmentation while `Flow` is a pipeline to orchestra multi augmenter together.
