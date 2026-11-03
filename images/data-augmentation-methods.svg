@@ -1,0 +1,318 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1620" width="900" height="1620" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect x="1" y="1" width="898" height="1618" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+<text x="30.0" y="44.0" font-size="22" fill="#0f172a" font-weight="bold" text-anchor="start">Data augmentation methods</text>
+<text x="30.0" y="68.0" font-size="14" fill="#64748b" font-weight="normal" text-anchor="start">Grouped by data type. Many methods apply to more than one type (for example Mixup).</text>
+<rect x="24" y="88" width="852" height="394.0" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="24" y="88" width="6" height="394.0" rx="3" fill="#2a78d6"/>
+<text x="42.0" y="114.0" font-size="16" fill="#0f172a" font-weight="bold" text-anchor="start">Images</text>
+<text x="42.0" y="138.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Geometric</text>
+<rect x="42.0" y="146.0" width="60.8" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="51.0" y="161.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">rotation</text>
+<rect x="108.8" y="146.0" width="58.0" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="117.8" y="161.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">scaling</text>
+<rect x="172.8" y="146.0" width="77.2" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="181.8" y="161.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">translation</text>
+<rect x="256.0" y="146.0" width="50.1" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="265.0" y="161.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">shear</text>
+<rect x="312.1" y="146.0" width="58.7" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="321.1" y="161.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">flipping</text>
+<rect x="376.8" y="146.0" width="114.3" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="385.8" y="161.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">random cropping</text>
+<rect x="497.1" y="146.0" width="83.7" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="506.1" y="161.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">perspective</text>
+<rect x="586.8" y="146.0" width="142.2" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="595.8" y="161.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">elastic / grid distortion</text>
+<text x="42.0" y="192.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Color and quality</text>
+<rect x="42.0" y="200.0" width="77.2" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="51.0" y="215.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">brightness</text>
+<rect x="125.2" y="200.0" width="63.7" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="134.2" y="215.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">contrast</text>
+<rect x="194.9" y="200.0" width="106.5" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="203.9" y="215.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">hue / saturation</text>
+<rect x="307.4" y="200.0" width="60.8" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="316.4" y="215.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">gamma</text>
+<rect x="374.2" y="200.0" width="72.9" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="383.2" y="215.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">grayscale</text>
+<rect x="453.2" y="200.0" width="104.4" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="462.2" y="215.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">channel shuffle</text>
+<rect x="563.5" y="200.0" width="39.4" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="572.5" y="215.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">blur</text>
+<rect x="608.9" y="200.0" width="81.5" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="617.9" y="215.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">sharpening</text>
+<rect x="696.4" y="200.0" width="106.5" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="705.4" y="215.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Gaussian noise</text>
+<rect x="42.0" y="228.0" width="127.9" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="51.0" y="243.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">JPEG compression</text>
+<rect x="175.9" y="228.0" width="183.6" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="184.9" y="243.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">solarize / posterize / equalize</text>
+<text x="42.0" y="274.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Occlusion</text>
+<rect x="42.0" y="282.0" width="107.2" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="51.0" y="297.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">random erasing</text>
+<rect x="155.2" y="282.0" width="55.8" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="164.2" y="297.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Cutout</text>
+<rect x="217.0" y="282.0" width="72.9" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="226.0" y="297.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">GridMask</text>
+<rect x="296.0" y="282.0" width="103.6" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="305.0" y="297.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Hide-and-Seek</text>
+<text x="42.0" y="328.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Mixing</text>
+<rect x="42.0" y="336.0" width="52.2" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="51.0" y="351.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Mixup</text>
+<rect x="100.2" y="336.0" width="57.9" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="109.2" y="351.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">CutMix</text>
+<rect x="164.2" y="336.0" width="58.7" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="173.2" y="351.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Mosaic</text>
+<rect x="228.9" y="336.0" width="85.1" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="237.9" y="351.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Copy-Paste</text>
+<rect x="319.9" y="336.0" width="60.8" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="328.9" y="351.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">AugMix</text>
+<rect x="386.7" y="336.0" width="45.8" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="395.7" y="351.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">FMix</text>
+<text x="42.0" y="382.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Effects</text>
+<rect x="42.0" y="390.0" width="39.4" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="51.0" y="405.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">rain</text>
+<rect x="87.4" y="390.0" width="35.8" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="96.4" y="405.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">fog</text>
+<rect x="129.3" y="390.0" width="48.0" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="138.3" y="405.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">snow</text>
+<rect x="183.2" y="390.0" width="67.2" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="192.2" y="405.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">sun flare</text>
+<rect x="256.5" y="390.0" width="68.7" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="265.5" y="405.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">shadows</text>
+<text x="42.0" y="436.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Neural and generative</text>
+<rect x="42.0" y="444.0" width="115.0" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="51.0" y="459.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">adversarial noise</text>
+<rect x="163.0" y="444.0" width="130.7" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="172.0" y="459.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">neural style transfer</text>
+<rect x="299.8" y="444.0" width="52.2" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="308.8" y="459.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">GANs</text>
+<rect x="358.0" y="444.0" width="110.8" height="22" rx="11.0" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.45"/>
+<text x="367.0" y="459.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">diffusion models</text>
+<rect x="24" y="496" width="419" height="372.0" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="24" y="496" width="6" height="372.0" rx="3" fill="#eb6834"/>
+<text x="42.0" y="522.0" font-size="16" fill="#0f172a" font-weight="bold" text-anchor="start">Audio and speech</text>
+<text x="42.0" y="546.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Waveform</text>
+<rect x="42.0" y="554.0" width="99.4" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="51.0" y="569.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">noise injection</text>
+<rect x="147.4" y="554.0" width="119.3" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="156.4" y="569.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">background noise</text>
+<rect x="272.7" y="554.0" width="42.3" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="281.7" y="569.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">gain</text>
+<rect x="321.0" y="554.0" width="69.4" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="330.0" y="569.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">time shift</text>
+<rect x="42.0" y="582.0" width="101.5" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="51.0" y="597.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">time stretching</text>
+<rect x="149.5" y="582.0" width="125.1" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="158.5" y="597.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">speed perturbation</text>
+<rect x="280.5" y="582.0" width="89.4" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="289.5" y="597.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">pitch shifting</text>
+<rect x="42.0" y="610.0" width="199.9" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="51.0" y="625.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">reverb (room impulse response)</text>
+<rect x="247.9" y="610.0" width="86.5" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="256.9" y="625.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">equalization</text>
+<rect x="42.0" y="638.0" width="178.6" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="51.0" y="653.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">dynamic range compression</text>
+<rect x="226.6" y="638.0" width="100.8" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="235.6" y="653.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">codec artifacts</text>
+<rect x="42.0" y="666.0" width="114.3" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="51.0" y="681.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">random cropping</text>
+<rect x="162.3" y="666.0" width="52.2" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="171.3" y="681.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Mixup</text>
+<text x="42.0" y="712.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Spectrogram</text>
+<rect x="42.0" y="720.0" width="181.4" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="51.0" y="735.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">SpecAugment: time masking</text>
+<rect x="229.4" y="720.0" width="125.8" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="238.4" y="735.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">frequency masking</text>
+<rect x="42.0" y="748.0" width="90.8" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="51.0" y="763.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">time warping</text>
+<text x="42.0" y="794.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Speech</text>
+<rect x="42.0" y="802.0" width="113.6" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="51.0" y="817.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">voice conversion</text>
+<rect x="161.6" y="802.0" width="187.1" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="170.6" y="817.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">vocal tract length perturbation</text>
+<rect x="42.0" y="830.0" width="156.4" height="22" rx="11.0" fill="#eb6834" fill-opacity="0.10" stroke="#eb6834" stroke-opacity="0.45"/>
+<text x="51.0" y="845.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">text-to-speech synthesis</text>
+<rect x="457" y="496" width="419" height="314.0" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="457" y="496" width="6" height="314.0" rx="3" fill="#1baf7a"/>
+<text x="475.0" y="522.0" font-size="16" fill="#0f172a" font-weight="bold" text-anchor="start">Text</text>
+<text x="475.0" y="546.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Word level</text>
+<rect x="475.0" y="554.0" width="143.6" height="22" rx="11.0" fill="#1baf7a" fill-opacity="0.10" stroke="#1baf7a" stroke-opacity="0.45"/>
+<text x="484.0" y="569.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">synonym replacement</text>
+<rect x="624.6" y="554.0" width="113.6" height="22" rx="11.0" fill="#1baf7a" fill-opacity="0.10" stroke="#1baf7a" stroke-opacity="0.45"/>
+<text x="633.6" y="569.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">random insertion</text>
+<rect x="744.2" y="554.0" width="95.1" height="22" rx="11.0" fill="#1baf7a" fill-opacity="0.10" stroke="#1baf7a" stroke-opacity="0.45"/>
+<text x="753.2" y="569.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">random swap</text>
+<rect x="475.0" y="582.0" width="110.1" height="22" rx="11.0" fill="#1baf7a" fill-opacity="0.10" stroke="#1baf7a" stroke-opacity="0.45"/>
+<text x="484.0" y="597.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">random deletion</text>
+<rect x="591.1" y="582.0" width="119.3" height="22" rx="11.0" fill="#1baf7a" fill-opacity="0.10" stroke="#1baf7a" stroke-opacity="0.45"/>
+<text x="600.1" y="597.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">word embeddings</text>
+<rect x="475.0" y="610.0" width="155.0" height="22" rx="11.0" fill="#1baf7a" fill-opacity="0.10" stroke="#1baf7a" stroke-opacity="0.45"/>
+<text x="484.0" y="625.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">contextual (masked LM)</text>
+<rect x="636.0" y="610.0" width="122.9" height="22" rx="11.0" fill="#1baf7a" fill-opacity="0.10" stroke="#1baf7a" stroke-opacity="0.45"/>
+<text x="645.0" y="625.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">entity replacement</text>
+<text x="475.0" y="656.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Character level</text>
+<rect x="475.0" y="664.0" width="48.7" height="22" rx="11.0" fill="#1baf7a" fill-opacity="0.10" stroke="#1baf7a" stroke-opacity="0.45"/>
+<text x="484.0" y="679.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">typos</text>
+<rect x="529.7" y="664.0" width="105.1" height="22" rx="11.0" fill="#1baf7a" fill-opacity="0.10" stroke="#1baf7a" stroke-opacity="0.45"/>
+<text x="538.7" y="679.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">keyboard noise</text>
+<rect x="640.8" y="664.0" width="80.8" height="22" rx="11.0" fill="#1baf7a" fill-opacity="0.10" stroke="#1baf7a" stroke-opacity="0.45"/>
+<text x="649.8" y="679.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">OCR noise</text>
+<text x="475.0" y="710.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Sentence level</text>
+<rect x="475.0" y="718.0" width="107.9" height="22" rx="11.0" fill="#1baf7a" fill-opacity="0.10" stroke="#1baf7a" stroke-opacity="0.45"/>
+<text x="484.0" y="733.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">back translation</text>
+<rect x="588.9" y="718.0" width="92.9" height="22" rx="11.0" fill="#1baf7a" fill-opacity="0.10" stroke="#1baf7a" stroke-opacity="0.45"/>
+<text x="597.9" y="733.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">paraphrasing</text>
+<rect x="687.9" y="718.0" width="170.7" height="22" rx="11.0" fill="#1baf7a" fill-opacity="0.10" stroke="#1baf7a" stroke-opacity="0.45"/>
+<text x="696.9" y="733.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Mixup in embedding space</text>
+<text x="475.0" y="764.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Generative</text>
+<rect x="475.0" y="772.0" width="102.9" height="22" rx="11.0" fill="#1baf7a" fill-opacity="0.10" stroke="#1baf7a" stroke-opacity="0.45"/>
+<text x="484.0" y="787.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">text generation</text>
+<rect x="583.9" y="772.0" width="103.6" height="22" rx="11.0" fill="#1baf7a" fill-opacity="0.10" stroke="#1baf7a" stroke-opacity="0.45"/>
+<text x="592.9" y="787.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">LLM prompting</text>
+<rect x="693.6" y="772.0" width="133.6" height="22" rx="11.0" fill="#1baf7a" fill-opacity="0.10" stroke="#1baf7a" stroke-opacity="0.45"/>
+<text x="702.6" y="787.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">instruction synthesis</text>
+<rect x="457" y="824" width="419" height="370.0" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="457" y="824" width="6" height="370.0" rx="3" fill="#0e7490"/>
+<text x="475.0" y="850.0" font-size="16" fill="#0f172a" font-weight="bold" text-anchor="start">Large language models</text>
+<text x="475.0" y="874.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Instruction data</text>
+<rect x="475.0" y="882.0" width="86.5" height="22" rx="11.0" fill="#0e7490" fill-opacity="0.10" stroke="#0e7490" stroke-opacity="0.45"/>
+<text x="484.0" y="897.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Self-Instruct</text>
+<rect x="567.5" y="882.0" width="89.4" height="22" rx="11.0" fill="#0e7490" fill-opacity="0.10" stroke="#0e7490" stroke-opacity="0.45"/>
+<text x="576.5" y="897.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Evol-Instruct</text>
+<rect x="662.9" y="882.0" width="60.1" height="22" rx="11.0" fill="#0e7490" fill-opacity="0.10" stroke="#0e7490" stroke-opacity="0.45"/>
+<text x="671.9" y="897.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Magpie</text>
+<rect x="475.0" y="910.0" width="203.5" height="22" rx="11.0" fill="#0e7490" fill-opacity="0.10" stroke="#0e7490" stroke-opacity="0.45"/>
+<text x="484.0" y="925.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">distillation from a stronger model</text>
+<text x="475.0" y="956.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Pretraining data</text>
+<rect x="475.0" y="964.0" width="130.0" height="22" rx="11.0" fill="#0e7490" fill-opacity="0.10" stroke="#0e7490" stroke-opacity="0.45"/>
+<text x="484.0" y="979.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">rephrasing web text</text>
+<rect x="611.0" y="964.0" width="127.2" height="22" rx="11.0" fill="#0e7490" fill-opacity="0.10" stroke="#0e7490" stroke-opacity="0.45"/>
+<text x="620.0" y="979.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">synthetic textbooks</text>
+<rect x="475.0" y="992.0" width="197.1" height="22" rx="11.0" fill="#0e7490" fill-opacity="0.10" stroke="#0e7490" stroke-opacity="0.45"/>
+<text x="484.0" y="1007.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">translation into other languages</text>
+<text x="475.0" y="1038.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Reasoning</text>
+<rect x="475.0" y="1046.0" width="198.6" height="22" rx="11.0" fill="#0e7490" fill-opacity="0.10" stroke="#0e7490" stroke-opacity="0.45"/>
+<text x="484.0" y="1061.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">self-generated reasoning traces</text>
+<rect x="679.6" y="1046.0" width="121.5" height="22" rx="11.0" fill="#0e7490" fill-opacity="0.10" stroke="#0e7490" stroke-opacity="0.45"/>
+<text x="688.6" y="1061.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">rejection sampling</text>
+<rect x="475.0" y="1074.0" width="155.0" height="22" rx="11.0" fill="#0e7490" fill-opacity="0.10" stroke="#0e7490" stroke-opacity="0.45"/>
+<text x="484.0" y="1089.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">rewriting math problems</text>
+<rect x="636.0" y="1074.0" width="204.3" height="22" rx="11.0" fill="#0e7490" fill-opacity="0.10" stroke="#0e7490" stroke-opacity="0.45"/>
+<text x="645.0" y="1089.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">verified code and math problems</text>
+<text x="475.0" y="1120.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Alignment and robustness</text>
+<rect x="475.0" y="1128.0" width="134.3" height="22" rx="11.0" fill="#0e7490" fill-opacity="0.10" stroke="#0e7490" stroke-opacity="0.45"/>
+<text x="484.0" y="1143.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">AI feedback (RLAIF)</text>
+<rect x="615.3" y="1128.0" width="165.0" height="22" rx="11.0" fill="#0e7490" fill-opacity="0.10" stroke="#0e7490" stroke-opacity="0.45"/>
+<text x="624.3" y="1143.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">synthetic preference pairs</text>
+<rect x="475.0" y="1156.0" width="136.4" height="22" rx="11.0" fill="#0e7490" fill-opacity="0.10" stroke="#0e7490" stroke-opacity="0.45"/>
+<text x="484.0" y="1171.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">red-teaming prompts</text>
+<rect x="617.4" y="1156.0" width="136.5" height="22" rx="11.0" fill="#0e7490" fill-opacity="0.10" stroke="#0e7490" stroke-opacity="0.45"/>
+<text x="626.4" y="1171.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">prompt paraphrasing</text>
+<rect x="24" y="882" width="419" height="206.0" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="24" y="882" width="6" height="206.0" rx="3" fill="#c98500"/>
+<text x="42.0" y="908.0" font-size="16" fill="#0f172a" font-weight="bold" text-anchor="start">Time series</text>
+<text x="42.0" y="932.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Basic</text>
+<rect x="42.0" y="940.0" width="59.4" height="22" rx="11.0" fill="#c98500" fill-opacity="0.10" stroke="#c98500" stroke-opacity="0.45"/>
+<text x="51.0" y="955.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">jittering</text>
+<rect x="107.4" y="940.0" width="58.0" height="22" rx="11.0" fill="#c98500" fill-opacity="0.10" stroke="#c98500" stroke-opacity="0.45"/>
+<text x="116.4" y="955.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">scaling</text>
+<rect x="171.3" y="940.0" width="126.5" height="22" rx="11.0" fill="#c98500" fill-opacity="0.10" stroke="#c98500" stroke-opacity="0.45"/>
+<text x="180.3" y="955.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">magnitude warping</text>
+<rect x="303.8" y="940.0" width="90.8" height="22" rx="11.0" fill="#c98500" fill-opacity="0.10" stroke="#c98500" stroke-opacity="0.45"/>
+<text x="312.8" y="955.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">time warping</text>
+<rect x="42.0" y="968.0" width="100.0" height="22" rx="11.0" fill="#c98500" fill-opacity="0.10" stroke="#c98500" stroke-opacity="0.45"/>
+<text x="51.0" y="983.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">window slicing</text>
+<rect x="148.0" y="968.0" width="109.3" height="22" rx="11.0" fill="#c98500" fill-opacity="0.10" stroke="#c98500" stroke-opacity="0.45"/>
+<text x="157.0" y="983.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">window warping</text>
+<rect x="263.4" y="968.0" width="85.8" height="22" rx="11.0" fill="#c98500" fill-opacity="0.10" stroke="#c98500" stroke-opacity="0.45"/>
+<text x="272.4" y="983.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">permutation</text>
+<text x="42.0" y="1014.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Advanced</text>
+<rect x="42.0" y="1022.0" width="120.1" height="22" rx="11.0" fill="#c98500" fill-opacity="0.10" stroke="#c98500" stroke-opacity="0.45"/>
+<text x="51.0" y="1037.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">frequency domain</text>
+<rect x="168.1" y="1022.0" width="52.2" height="22" rx="11.0" fill="#c98500" fill-opacity="0.10" stroke="#c98500" stroke-opacity="0.45"/>
+<text x="177.1" y="1037.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Mixup</text>
+<rect x="226.3" y="1022.0" width="119.3" height="22" rx="11.0" fill="#c98500" fill-opacity="0.10" stroke="#c98500" stroke-opacity="0.45"/>
+<text x="235.3" y="1037.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">embedding space</text>
+<rect x="42.0" y="1050.0" width="110.8" height="22" rx="11.0" fill="#c98500" fill-opacity="0.10" stroke="#c98500" stroke-opacity="0.45"/>
+<text x="51.0" y="1065.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">GANs / diffusion</text>
+<rect x="158.8" y="1050.0" width="123.6" height="22" rx="11.0" fill="#c98500" fill-opacity="0.10" stroke="#c98500" stroke-opacity="0.45"/>
+<text x="167.8" y="1065.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">RL / meta-learning</text>
+<rect x="24" y="1102" width="419" height="178.0" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="24" y="1102" width="6" height="178.0" rx="3" fill="#7c3aed"/>
+<text x="42.0" y="1128.0" font-size="16" fill="#0f172a" font-weight="bold" text-anchor="start">Graphs</text>
+<text x="42.0" y="1152.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Structure</text>
+<rect x="42.0" y="1160.0" width="100.1" height="22" rx="11.0" fill="#7c3aed" fill-opacity="0.10" stroke="#7c3aed" stroke-opacity="0.45"/>
+<text x="51.0" y="1175.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">node dropping</text>
+<rect x="148.1" y="1160.0" width="100.1" height="22" rx="11.0" fill="#7c3aed" fill-opacity="0.10" stroke="#7c3aed" stroke-opacity="0.45"/>
+<text x="157.1" y="1175.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">edge dropping</text>
+<rect x="254.2" y="1160.0" width="95.1" height="22" rx="11.0" fill="#7c3aed" fill-opacity="0.10" stroke="#7c3aed" stroke-opacity="0.45"/>
+<text x="263.2" y="1175.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">edge addition</text>
+<rect x="42.0" y="1188.0" width="126.5" height="22" rx="11.0" fill="#7c3aed" fill-opacity="0.10" stroke="#7c3aed" stroke-opacity="0.45"/>
+<text x="51.0" y="1203.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">subgraph sampling</text>
+<text x="42.0" y="1234.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Features and mixing</text>
+<rect x="42.0" y="1242.0" width="109.3" height="22" rx="11.0" fill="#7c3aed" fill-opacity="0.10" stroke="#7c3aed" stroke-opacity="0.45"/>
+<text x="51.0" y="1257.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">feature masking</text>
+<rect x="157.3" y="1242.0" width="88.6" height="22" rx="11.0" fill="#7c3aed" fill-opacity="0.10" stroke="#7c3aed" stroke-opacity="0.45"/>
+<text x="166.3" y="1257.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">graph Mixup</text>
+<rect x="457" y="1208" width="419" height="150.0" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="457" y="1208" width="6" height="150.0" rx="3" fill="#e34948"/>
+<text x="475.0" y="1234.0" font-size="16" fill="#0f172a" font-weight="bold" text-anchor="start">Tabular data</text>
+<text x="475.0" y="1258.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Oversampling and noise</text>
+<rect x="475.0" y="1266.0" width="137.2" height="22" rx="11.0" fill="#e34948" fill-opacity="0.10" stroke="#e34948" stroke-opacity="0.45"/>
+<text x="484.0" y="1281.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">SMOTE and variants</text>
+<rect x="618.2" y="1266.0" width="99.4" height="22" rx="11.0" fill="#e34948" fill-opacity="0.10" stroke="#e34948" stroke-opacity="0.45"/>
+<text x="627.2" y="1281.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">noise injection</text>
+<rect x="723.5" y="1266.0" width="52.2" height="22" rx="11.0" fill="#e34948" fill-opacity="0.10" stroke="#e34948" stroke-opacity="0.45"/>
+<text x="732.5" y="1281.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Mixup</text>
+<text x="475.0" y="1312.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Generative</text>
+<rect x="475.0" y="1320.0" width="107.2" height="22" rx="11.0" fill="#e34948" fill-opacity="0.10" stroke="#e34948" stroke-opacity="0.45"/>
+<text x="484.0" y="1335.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">CTGAN / TVAE</text>
+<rect x="588.2" y="1320.0" width="110.8" height="22" rx="11.0" fill="#e34948" fill-opacity="0.10" stroke="#e34948" stroke-opacity="0.45"/>
+<text x="597.2" y="1335.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">diffusion models</text>
+<rect x="705.0" y="1320.0" width="135.7" height="22" rx="11.0" fill="#e34948" fill-opacity="0.10" stroke="#e34948" stroke-opacity="0.45"/>
+<text x="714.0" y="1335.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">LLM-generated rows</text>
+<rect x="24" y="1294" width="419" height="206.0" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="24" y="1294" width="6" height="206.0" rx="3" fill="#008300"/>
+<text x="42.0" y="1320.0" font-size="16" fill="#0f172a" font-weight="bold" text-anchor="start">3D and video</text>
+<text x="42.0" y="1344.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Point clouds</text>
+<rect x="42.0" y="1352.0" width="60.8" height="22" rx="11.0" fill="#008300" fill-opacity="0.10" stroke="#008300" stroke-opacity="0.45"/>
+<text x="51.0" y="1367.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">rotation</text>
+<rect x="108.8" y="1352.0" width="58.0" height="22" rx="11.0" fill="#008300" fill-opacity="0.10" stroke="#008300" stroke-opacity="0.45"/>
+<text x="117.8" y="1367.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">scaling</text>
+<rect x="172.8" y="1352.0" width="73.7" height="22" rx="11.0" fill="#008300" fill-opacity="0.10" stroke="#008300" stroke-opacity="0.45"/>
+<text x="181.8" y="1367.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">point jitter</text>
+<rect x="252.4" y="1352.0" width="92.9" height="22" rx="11.0" fill="#008300" fill-opacity="0.10" stroke="#008300" stroke-opacity="0.45"/>
+<text x="261.4" y="1367.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">point dropout</text>
+<rect x="351.4" y="1352.0" width="67.2" height="22" rx="11.0" fill="#008300" fill-opacity="0.10" stroke="#008300" stroke-opacity="0.45"/>
+<text x="360.4" y="1367.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">PointMix</text>
+<rect x="42.0" y="1380.0" width="70.1" height="22" rx="11.0" fill="#008300" fill-opacity="0.10" stroke="#008300" stroke-opacity="0.45"/>
+<text x="51.0" y="1395.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">LaserMix</text>
+<text x="42.0" y="1426.0" font-size="12" fill="#64748b" font-weight="bold" text-anchor="start">Video</text>
+<rect x="42.0" y="1434.0" width="120.8" height="22" rx="11.0" fill="#008300" fill-opacity="0.10" stroke="#008300" stroke-opacity="0.45"/>
+<text x="51.0" y="1449.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">temporal cropping</text>
+<rect x="168.8" y="1434.0" width="105.8" height="22" rx="11.0" fill="#008300" fill-opacity="0.10" stroke="#008300" stroke-opacity="0.45"/>
+<text x="177.8" y="1449.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">frame sampling</text>
+<rect x="42.0" y="1462.0" width="196.4" height="22" rx="11.0" fill="#008300" fill-opacity="0.10" stroke="#008300" stroke-opacity="0.45"/>
+<text x="51.0" y="1477.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">same transform on every frame</text>
+<rect x="457" y="1372" width="419" height="76.0" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="457" y="1372" width="6" height="76.0" rx="3" fill="#d55181"/>
+<text x="475.0" y="1398.0" font-size="16" fill="#0f172a" font-weight="bold" text-anchor="start">Gene expression</text>
+<rect x="475.0" y="1410.0" width="52.2" height="22" rx="11.0" fill="#d55181" fill-opacity="0.10" stroke="#d55181" stroke-opacity="0.45"/>
+<text x="484.0" y="1425.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">GANs</text>
+<rect x="533.2" y="1410.0" width="131.5" height="22" rx="11.0" fill="#d55181" fill-opacity="0.10" stroke="#d55181" stroke-opacity="0.45"/>
+<text x="542.2" y="1425.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">mixing observations</text>
+<rect x="670.7" y="1410.0" width="162.1" height="22" rx="11.0" fill="#d55181" fill-opacity="0.10" stroke="#d55181" stroke-opacity="0.45"/>
+<text x="679.7" y="1425.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">random variable insertion</text>
+<rect x="457" y="1462" width="419" height="132.0" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="457" y="1462" width="6" height="132.0" rx="3" fill="#475569"/>
+<text x="475.0" y="1488.0" font-size="16" fill="#0f172a" font-weight="bold" text-anchor="start">Automatic augmentation</text>
+<rect x="475.0" y="1500.0" width="95.8" height="22" rx="11.0" fill="#475569" fill-opacity="0.10" stroke="#475569" stroke-opacity="0.45"/>
+<text x="484.0" y="1515.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">AutoAugment</text>
+<rect x="576.8" y="1500.0" width="124.3" height="22" rx="11.0" fill="#475569" fill-opacity="0.10" stroke="#475569" stroke-opacity="0.45"/>
+<text x="585.8" y="1515.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Fast AutoAugment</text>
+<rect x="475.0" y="1528.0" width="201.4" height="22" rx="11.0" fill="#475569" fill-opacity="0.10" stroke="#475569" stroke-opacity="0.45"/>
+<text x="484.0" y="1543.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">Population Based Augmentation</text>
+<rect x="682.4" y="1528.0" width="100.1" height="22" rx="11.0" fill="#475569" fill-opacity="0.10" stroke="#475569" stroke-opacity="0.45"/>
+<text x="691.4" y="1543.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">RandAugment</text>
+<rect x="475.0" y="1556.0" width="103.6" height="22" rx="11.0" fill="#475569" fill-opacity="0.10" stroke="#475569" stroke-opacity="0.45"/>
+<text x="484.0" y="1571.0" font-size="12" fill="#334155" font-weight="normal" text-anchor="start">TrivialAugment</text>
+</svg>

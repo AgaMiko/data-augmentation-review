@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 530" width="900" height="530" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect x="1" y="1" width="898" height="528" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+<text x="30" y="44" font-size="20" fill="#0f172a" font-weight="bold" text-anchor="start">Automatic augmentation (AutoAugment)</text>
+<text x="30" y="68" font-size="14" fill="#64748b" font-weight="normal" text-anchor="start">Instead of choosing augmentations by hand, search for the policy that gives the best validation accuracy.</text>
+<rect x="40" y="104" width="220" height="96" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/><text x="150.0" y="132" font-size="15" fill="#0f172a" font-weight="bold" text-anchor="middle">Search algorithm</text><text x="150.0" y="152" font-size="13" fill="#334155" font-weight="normal" text-anchor="middle">proposes a policy</text><text x="150.0" y="172" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">e.g. a controller network</text>
+<rect x="340" y="92" width="240" height="120" rx="12" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/><text x="460.0" y="120" font-size="15" fill="#0f172a" font-weight="bold" text-anchor="middle">Policy</text><text x="460.0" y="140" font-size="13" fill="#334155" font-weight="normal" text-anchor="middle">which operations to use,</text><text x="460.0" y="160" font-size="13" fill="#334155" font-weight="normal" text-anchor="middle">how often (probability),</text><text x="460.0" y="180" font-size="13" fill="#334155" font-weight="normal" text-anchor="middle">how strong (magnitude)</text>
+<rect x="660" y="104" width="200" height="96" rx="12" fill="#f8fafc" stroke="#64748b" stroke-width="2"/><text x="760.0" y="132" font-size="15" fill="#0f172a" font-weight="bold" text-anchor="middle">Train a model</text><text x="760.0" y="152" font-size="13" fill="#334155" font-weight="normal" text-anchor="middle">with the policy</text><text x="760.0" y="172" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">(often a small proxy)</text>
+<rect x="400" y="252" width="180" height="70" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/><text x="490.0" y="280" font-size="15" fill="#0f172a" font-weight="bold" text-anchor="middle">Validation</text><text x="490.0" y="300" font-size="13" fill="#334155" font-weight="normal" text-anchor="middle">accuracy</text>
+<path d="M260 152 H336" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+<path d="M580 152 H656" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+<path d="M760 200 V287 H584" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+<path d="M400 287 H150 V204" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+<text x="170" y="308" font-size="12" fill="#64748b" font-weight="normal" text-anchor="start">feedback: better policies</text>
+<text x="170" y="324" font-size="12" fill="#64748b" font-weight="normal" text-anchor="start">get chosen more often</text>
+<text x="30" y="370" font-size="15" fill="#0f172a" font-weight="bold" text-anchor="start">Main variants</text>
+<circle cx="40" cy="394" r="3.5" fill="#2563eb"/>
+<text x="52" y="398" font-size="13" fill="#0f172a" font-weight="bold" text-anchor="start">AutoAugment</text>
+<text x="282" y="398" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">searches with reinforcement learning; accurate but very expensive</text>
+<circle cx="40" cy="418" r="3.5" fill="#2563eb"/>
+<text x="52" y="422" font-size="13" fill="#0f172a" font-weight="bold" text-anchor="start">Fast AutoAugment</text>
+<text x="282" y="422" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">matches the distributions of augmented and real data; much faster search</text>
+<circle cx="40" cy="442" r="3.5" fill="#2563eb"/>
+<text x="52" y="446" font-size="13" fill="#0f172a" font-weight="bold" text-anchor="start">Population Based Augmentation</text>
+<text x="282" y="446" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">learns a schedule of policies that changes during training</text>
+<circle cx="40" cy="466" r="3.5" fill="#2563eb"/>
+<text x="52" y="470" font-size="13" fill="#0f172a" font-weight="bold" text-anchor="start">RandAugment</text>
+<text x="282" y="470" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">no search: picks N random operations at one shared magnitude M</text>
+<circle cx="40" cy="490" r="3.5" fill="#2563eb"/>
+<text x="52" y="494" font-size="13" fill="#0f172a" font-weight="bold" text-anchor="start">TrivialAugment</text>
+<text x="282" y="494" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">no search and no parameters: one random operation at a random strength</text>
+</svg>

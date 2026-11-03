@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 546" width="900" height="546" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker>
+<symbol id="day" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="#bfdbfe"/>
+  <circle cx="76" cy="24" r="11" fill="#facc15"/>
+  <path d="M0 70 Q25 52 50 64 T100 58 V100 H0Z" fill="#86efac"/>
+  <path d="M0 82 Q30 70 60 80 T100 76 V100 H0Z" fill="#22c55e"/>
+  <rect x="21" y="48" width="5" height="22" fill="#92400e"/>
+  <circle cx="23.5" cy="42" r="12" fill="#15803d"/>
+  <path d="M58 62 L70 52 L82 62 V76 H58Z" fill="#f8fafc"/><path d="M55 63 L70 49 L85 63" fill="none" stroke="#b91c1c" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="67" y="67" width="6" height="9" fill="#78350f"/>
+</symbol>
+<symbol id="night" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="#1e1b4b"/>
+  <circle cx="26" cy="24" r="9" fill="#e0e7ff"/><circle cx="30" cy="21" r="8" fill="#1e1b4b"/>
+  <circle cx="60" cy="16" r="1.4" fill="#fff"/><circle cx="82" cy="30" r="1.2" fill="#fff"/><circle cx="46" cy="36" r="1" fill="#fff"/>
+  <path d="M0 74 L22 46 L40 66 L62 36 L100 74 V100 H0Z" fill="#475569"/>
+  <path d="M62 36 L70 46 L66 48 L60 44 L56 46Z" fill="#e2e8f0"/>
+  <rect y="84" width="100" height="16" fill="#334155"/>
+</symbol>
+<filter id="bright"><feComponentTransfer><feFuncR type="linear" slope="1.45"/><feFuncG type="linear" slope="1.45"/><feFuncB type="linear" slope="1.45"/></feComponentTransfer></filter>
+<filter id="contrast"><feComponentTransfer><feFuncR type="linear" slope="1.5" intercept="-0.22"/><feFuncG type="linear" slope="1.5" intercept="-0.22"/><feFuncB type="linear" slope="1.5" intercept="-0.22"/></feComponentTransfer></filter>
+<filter id="blur" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="2.2"/></filter>
+<filter id="gray"><feColorMatrix type="saturate" values="0"/></filter>
+</defs>
+<rect x="1" y="1" width="898" height="544" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+<text x="30" y="44" font-size="20" fill="#0f172a" font-weight="bold" text-anchor="start">Common image augmentations</text>
+<text x="30" y="68" font-size="14" fill="#64748b" font-weight="normal" text-anchor="start">One training image and ten modified copies. Labels stay the same: it is still a picture of a house.</text>
+<svg x="30" y="96" width="150" height="150" viewBox="0 0 100 100"><g><use href="#day" width="100" height="100"/></g></svg>
+<rect x="30" y="96" width="150" height="150" rx="2" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="105" y="268" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="middle">original</text>
+<text x="105" y="286" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">the input</text>
+<svg x="202" y="96" width="150" height="150" viewBox="0 0 100 100"><g><rect width="100" height="100" fill="#0f172a"/><g transform="rotate(18 50 50)"><use href="#day" width="100" height="100"/></g></g></svg>
+<rect x="202" y="96" width="150" height="150" rx="2" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+<text x="277" y="268" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="middle">rotation</text>
+<text x="277" y="286" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">geometric</text>
+<svg x="374" y="96" width="150" height="150" viewBox="0 0 100 100"><g><g transform="translate(100 0) scale(-1 1)"><use href="#day" width="100" height="100"/></g></g></svg>
+<rect x="374" y="96" width="150" height="150" rx="2" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+<text x="449" y="268" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="middle">horizontal flip</text>
+<text x="449" y="286" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">geometric</text>
+<svg x="546" y="96" width="150" height="150" viewBox="0 0 100 100"><g><g transform="scale(1.8) translate(-28 -26)"><use href="#day" width="100" height="100"/></g></g></svg>
+<rect x="546" y="96" width="150" height="150" rx="2" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+<text x="621" y="268" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="middle">random crop</text>
+<text x="621" y="286" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">geometric</text>
+<svg x="718" y="96" width="150" height="150" viewBox="0 0 100 100"><g><use href="#day" width="100" height="100" filter="url(#bright)"/></g></svg>
+<rect x="718" y="96" width="150" height="150" rx="2" fill="none" stroke="#ea580c" stroke-width="2.5"/>
+<text x="793" y="268" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="middle">brightness</text>
+<text x="793" y="286" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">colour</text>
+<svg x="30" y="302" width="150" height="150" viewBox="0 0 100 100"><g><use href="#day" width="100" height="100" filter="url(#contrast)"/></g></svg>
+<rect x="30" y="302" width="150" height="150" rx="2" fill="none" stroke="#ea580c" stroke-width="2.5"/>
+<text x="105" y="474" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="middle">contrast</text>
+<text x="105" y="492" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">colour</text>
+<svg x="202" y="302" width="150" height="150" viewBox="0 0 100 100"><g><use href="#day" width="100" height="100" filter="url(#blur)"/></g></svg>
+<rect x="202" y="302" width="150" height="150" rx="2" fill="none" stroke="#ea580c" stroke-width="2.5"/>
+<text x="277" y="474" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="middle">blur</text>
+<text x="277" y="492" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">colour</text>
+<svg x="374" y="302" width="150" height="150" viewBox="0 0 100 100"><g><use href="#day" width="100" height="100"/><rect x="48" y="42" width="34" height="30" fill="#94a3b8"/></g></svg>
+<rect x="374" y="302" width="150" height="150" rx="2" fill="none" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="449" y="474" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="middle">random erasing</text>
+<text x="449" y="492" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">occlusion and mixing</text>
+<svg x="546" y="302" width="150" height="150" viewBox="0 0 100 100"><g><use href="#day" width="100" height="100"/><use href="#night" width="100" height="100" opacity="0.45"/></g></svg>
+<rect x="546" y="302" width="150" height="150" rx="2" fill="none" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="621" y="474" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="middle">mixup</text>
+<text x="621" y="492" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">occlusion and mixing</text>
+<svg x="718" y="302" width="150" height="150" viewBox="0 0 100 100"><g><use href="#day" width="100" height="100"/><svg x="8" y="8" width="44" height="40" viewBox="8 8 44 40"><use href="#night" width="100" height="100"/></svg></g></svg>
+<rect x="718" y="302" width="150" height="150" rx="2" fill="none" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="793" y="474" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="middle">cutmix</text>
+<text x="793" y="492" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">occlusion and mixing</text>
+<text x="30" y="520" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">Mixup blends two images (and their labels). CutMix pastes a patch from another image and mixes the labels by area.</text>
+</svg>
