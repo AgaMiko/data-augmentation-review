@@ -320,6 +320,10 @@ It can be used to significantly improve the data efficiency for GAN training. We
 
 #### - [LaserMix](https://github.com/worldbench/LaserMix) ![](https://img.shields.io/github/stars/worldbench/LaserMix.svg?style=social) - Mixes LiDAR scans by laser beam ranges for semi-supervised LiDAR semantic segmentation (CVPR 2023).
 
+#### - [bnnr](https://github.com/bnnr-team/bnnr) ![](https://img.shields.io/github/stars/bnnr-team/bnnr.svg?style=social) - PyTorch toolkit for saliency-guided augmentation. It uses the model's own saliency maps to decide where to mask the image: ICD (Intelligent Coarse Dropout) masks the regions the model already focuses on, and Anti-ICD masks low-saliency background. A branch search keeps only the augmentations that improve validation accuracy. [Paper](https://doi.org/10.5281/zenodo.20581077)
+
+![ICD panel](https://raw.githubusercontent.com/bnnr-team/bnnr/main/docs/assets/icd-panel.png)
+
 ## Natural Language Processing
 
 #### - [nlpaug](https://github.com/makcedward/nlpaug)  ![](https://img.shields.io/github/stars/makcedward/nlpaug.svg?style=social) - This Python library helps you with augmenting nlp for your machine learning projects. Visit this introduction to understand about [Data Augmentation in NLP](https://towardsdatascience.com/data-augmentation-in-nlp-2801a34dfc28). `Augmenter` is the basic element of augmentation while `Flow` is a pipeline to orchestra multi augmenter together.

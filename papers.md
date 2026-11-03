@@ -32,6 +32,8 @@ Feel free to make a pull request!
 * [Other - challenges, workshops, tutorials, books](README.md#Other)
 
 ## 2026
+* [Intelligent Coarse Dropout and Anti-ICD: Saliency-Guided Masking Augmentation for Visual Classifiers](https://doi.org/10.5281/zenodo.20581077); Mateusz Walo; Preprint 2026. Masks image regions chosen from the model's saliency maps: the regions the model relies on (ICD) or the low-saliency background (Anti-ICD). Code: [bnnr](https://github.com/bnnr-team/bnnr).
+
 * [Diffusion-Based Data Augmentation for Image Recognition: A Systematic Analysis and Evaluation](https://arxiv.org/abs/2603.08364); Zekun Li, Yinghuan Shi, Yang Gao et al.; IJCV 2026. A systematic comparison of diffusion-based augmentation methods for image recognition.
 
 * [Active Tabular Augmentation via Policy-Guided Diffusion Inpainting](https://arxiv.org/abs/2605.10315); Zheyu Zhang, Shuo Yang, Bardh Prenkaj et al.; ICML 2026. Diffusion inpainting guided by a policy to augment tabular data.
