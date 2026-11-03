@@ -10,6 +10,7 @@ Feel free to make a pull request!
 * [Repositories](README.md#Repositories)
 	* [Computer vision](README.md#Computer-vision)
 	* [NLP](README.md#Natural-Language-Processing)
+	* [Large Language Models](README.md#large-language-models)
 	* [Audio](README.md#Audio)
 	* [Time series](README.md#Time-series)
 	* [Graph Augmentation](README.md#Graph-Augmentation)

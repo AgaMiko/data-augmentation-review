@@ -15,6 +15,7 @@ Feel free to make a pull request!
 * [Repositories](README.md#Repositories)
 	* [Computer vision](README.md#Computer-vision)
 	* [Natural Language Processing](README.md#Natural-Language-Processing)
+	* [Large Language Models](README.md#large-language-models)
 	* [Audio/Speech](README.md#Audio)
 	* [Time series](README.md#Time-series)
 	* [Graph Augmentation](README.md#Graph-Augmentation)
@@ -378,11 +379,32 @@ They are releasing the following:
 * Code and checkpoints for our back translation augmentation system.
 
 
+## Large Language Models
+For large language models, augmentation mostly means synthetic data: an LLM creates or rewrites training examples, and the results are filtered before training. It is used for pretraining (rephrasing web text), instruction tuning, reasoning (keeping only solutions with correct answers) and alignment (AI feedback instead of human labels). Papers on this are in the 2022–2025 sections of the [papers list](papers.md).
+
+![Synthetic data for training large language models](images/llm-synthetic-data.svg)
+
+Tools for generating synthetic data:
+
 #### - [distilabel](https://github.com/argilla-io/distilabel) ![](https://img.shields.io/github/stars/argilla-io/distilabel.svg?style=social) - Framework for building pipelines that generate and label synthetic text data with LLMs, for example instruction or preference datasets.
 
 #### - [Synthetic Data Kit](https://github.com/meta-llama/synthetic-data-kit) ![](https://img.shields.io/github/stars/meta-llama/synthetic-data-kit.svg?style=social) - Meta's command-line tool for generating QA pairs and reasoning traces from documents and saving them in fine-tuning formats.
 
+#### - [DataDreamer](https://github.com/datadreamer-dev/DataDreamer) ![](https://img.shields.io/github/stars/datadreamer-dev/DataDreamer.svg?style=social) - Python library for synthetic data generation and reproducible LLM workflows: prompting, generating datasets, and training on them.
+
+#### - [NeMo Curator](https://github.com/NVIDIA-NeMo/Curator) ![](https://img.shields.io/github/stars/NVIDIA-NeMo/Curator.svg?style=social) - NVIDIA's toolkit for curating large training datasets (deduplication, quality filtering), with modules for generating synthetic data.
+
+Methods with official code and data:
+
 #### - [Self-Instruct](https://github.com/yizhongw/self-instruct) ![](https://img.shields.io/github/stars/yizhongw/self-instruct.svg?style=social) - Code and data for Self-Instruct, which bootstraps instruction-tuning data by prompting a language model with a small seed set.
+
+#### - [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) ![](https://img.shields.io/github/stars/tatsu-lab/stanford_alpaca.svg?style=social) - 52K instruction-following examples generated with a Self-Instruct style pipeline, and the code used to generate them and fine-tune LLaMA on them.
+
+#### - [WizardLM (Evol-Instruct)](https://github.com/nlpxucan/WizardLM) ![](https://img.shields.io/github/stars/nlpxucan/WizardLM.svg?style=social) - Evol-Instruct uses an LLM to rewrite instructions step by step into harder and more varied ones, then trains on the results.
+
+#### - [Magpie](https://github.com/magpie-align/magpie) ![](https://img.shields.io/github/stars/magpie-align/magpie.svg?style=social) - Generates instruction data by giving an aligned LLM only the start of its chat template, so it writes the user instructions itself.
+
+#### - [MetaMath](https://github.com/meta-math/MetaMath) ![](https://img.shields.io/github/stars/meta-math/MetaMath.svg?style=social) - Augments math training data by rewriting each question in several ways, including rephrasing and backward reasoning.
 
 ## Audio
 #### - [SpecAugment with Pytorch](https://github.com/zcaceres/spec_augment) ![](https://img.shields.io/github/stars/zcaceres/spec_augment.svg?style=social) - (https://ai.googleblog.com/2019/04/specaugment-new-data-augmentation.html) is a state of the art data augmentation approach for speech recognition. It supports augmentations such as time wrap, time mask, frequency mask or all above combined.
